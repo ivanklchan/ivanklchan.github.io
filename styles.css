@@ -95,7 +95,7 @@ header {
 nav {
     box-sizing: border-box;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
 }
 
 nav a {
