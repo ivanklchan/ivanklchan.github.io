@@ -299,17 +299,21 @@ nav a:hover {
     background-color: white;
     padding: 30px 70px;
     margin-bottom: 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial';
 /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
+.projectContent p {
+    font-family: "Arial", sans-serif;
+    font-size: 12 px; 
+}
 
 .projectContent h1 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     text-align: left;
     color: black;
     margin: 20px 0px;
+    font-family: 'Arial', sans-serif;
 }
 
 /* .projectContent h1:first-of-type {
@@ -318,15 +322,14 @@ nav a:hover {
 } 
 
 .projectContent h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: royalblue;
 }
 
 .projectContent h3 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: black;
+    font-family: "Arial";
 }
 
 .projectContent p {
@@ -335,9 +338,28 @@ nav a:hover {
 }
 
 .projectContent li {
-    font-family: 'Montserrat', sans-serif;   
+    font-family: "Arial";
 }
 
+.doubleDensity {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.echoEndo{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.endoCT{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.endoStroke{
+    max-height: 100%;
+    max-width: 100%;
+}
 /* ABOUT */
 
 .aboutIntroBackground {
