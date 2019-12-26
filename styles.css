@@ -43,6 +43,9 @@ blockquote {
     font-size: 18px;
 }
 
+/* caption {
+    padding-bottom: 5px;
+} */
 
 .divider {
     text-align: center;
@@ -309,7 +312,7 @@ nav a:hover {
 }
 
 .projectContent h1 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: left;
     color: black;
     margin: 20px 0px;
@@ -341,24 +344,24 @@ nav a:hover {
     font-family: "Arial";
 }
 
-.doubleDensity {
+.physLab1F1, .physLab1F2, .physLab1F3, .physLab1F4, .physLab1F5, .endoStroke, .endoCT, .doubleDensity, .echoEndo {
     max-height: 100%;
     max-width: 100%;
 }
 
-.echoEndo{
-    max-height: 100%;
-    max-width: 100%;
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
 }
 
-.endoCT{
-    max-height: 100%;
-    max-width: 100%;
+th, td {
+    padding: 5px;
+    text-align-last: left;
 }
 
-.endoStroke{
-    max-height: 100%;
-    max-width: 100%;
+table, th, td {
+    border: 1px solid black; 
+    border-collapse: collapse
 }
 /* ABOUT */
 
