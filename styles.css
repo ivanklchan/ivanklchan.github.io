@@ -12,6 +12,7 @@ COLOURS
 
 #F7F3E3 - sandy white
 #303030 - grey
+#000000 - black
 lightcoral
 
 */
@@ -19,7 +20,7 @@ lightcoral
 /* GLOBAL */
 html{ 
     font-family: 'Montserrat', sans-serif;
-    color: #F7F3E3;
+    color: #000000;
 }
 
 .contentWrap {
@@ -146,11 +147,19 @@ nav a:hover {
     padding-bottom: 20px;
 }
 
+.homeColRight h1 {
+    color: #F7F3E3;
+}
 
 .homeContent h1 {
     text-align: center;
     margin: 0;
     padding: 20px;
+    color: #F7F3E3;
+}
+
+.homeContent h2, cite{
+    color: #F7F3E3;
 }
 
 .homeContent p{
@@ -183,6 +192,7 @@ nav a:hover {
 
 .blogIntroContent h1 {
     font-size: 70px;
+    color: #F7F3E3;
 }
 
 .blogIntroContent p {
