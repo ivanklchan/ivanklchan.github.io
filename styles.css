@@ -40,13 +40,9 @@ p {
 }
 
 blockquote {
-    color: black;
     font-size: 18px;
 }
 
-/* caption {
-    padding-bottom: 5px;
-} */
 
 .divider {
     text-align: center;
@@ -221,7 +217,6 @@ nav a:hover {
     font-family: 'PT Serif', serif;
     font-size: 45px;
     text-align: left;
-    color: black;
     margin: 15px 0px;
 }
 
@@ -236,20 +231,17 @@ nav a:hover {
     font-family: 'PT Serif', serif;
     font-size: 20px;
     font-weight: 600;
-    color: black;
 }
 
 .blogContent p, li{
     font-family: 'PT Serif', serif;
     font-size: 18px;
-    color: black;
     line-height: 1.5;
 }
 
 .blogContent a {
     font-family: 'PT Serif', serif;
     font-size: 18px;
-/*    color: darkblue;*/
 }
 
 .blogContent blockquote {
@@ -300,7 +292,6 @@ nav a:hover {
     background-position: top left;
     padding-top: 200px;
     padding-bottom: 100px;
-    color: black;   
 }
 
 .projectContentBackground {
@@ -308,12 +299,10 @@ nav a:hover {
 }
 
 .projectContent {
-    color: black;
     background-color: white;
     padding: 30px 70px;
     margin-bottom: 40px;
     font-family: 'Arial';
-/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .projectContent p {
@@ -324,7 +313,6 @@ nav a:hover {
 .projectContent h1 {
     font-size: 30px;
     text-align: left;
-    color: black;
     margin: 20px 0px;
     font-family: 'Arial', sans-serif;
 }
@@ -332,7 +320,6 @@ nav a:hover {
 /* .projectContent h1:first-of-type {
 /*    font-weight: 900;*/
     /* font-size: 44px; */
-} 
 
 .projectContent h2 {
     font-size: 20px;
@@ -341,7 +328,6 @@ nav a:hover {
 
 .projectContent h3 {
     font-size: 20px;
-    color: black;
     font-family: "Arial";
 }
 
@@ -354,14 +340,13 @@ nav a:hover {
     font-family: "Arial";
 }
 
-.physLab1F1, .physLab1F2, .physLab1F3, .physLab1F4, .physLab1F5, .endoStroke, .endoCT, .doubleDensity, .echoEndo, .starPatt {
+.physLab1F1, .physLab1F2, .physLab1F3, .physLab1F4, .physLab1F5, .endoStroke, .endoCT, .doubleDensity, .echoEndo, .starPatt, .bowelPerf, .absAbsTx, .absUS, .abdAbsCor, .absPatt{
     max-height: 100%;
     max-width: 100%;
 }
 
 table {
     font-family: Arial, Helvetica, sans-serif;
-    color: black; 
 }
 
 th, td {
@@ -373,6 +358,7 @@ table, th, td {
     border: 1px solid black; 
     border-collapse: collapse
 }
+
 /* ABOUT */
 
 .aboutIntroBackground {
@@ -385,12 +371,10 @@ table, th, td {
 
 .aboutIntroContent h1{
     font-size: 72px;
-    color: black;
 }
 
 .aboutIntroContent p {
     font-size: 24px;
-    color: black;
     font-weight: 600;
 }
 
@@ -433,7 +417,7 @@ table, th, td {
     text-decoration: none;
 }
 
-.ivanSquare {
+.ivanHead {
     max-width: 300px;
     max-height: 300px;
     border-radius: 50%;
@@ -452,12 +436,10 @@ table, th, td {
     padding-bottom: 120px;
     background-position: center left;
     position: relative;
-    color: black;
 }
 
 .resumeIntroBackground p {
     font-size: 20px;
-    color: black;
 }
 
 .resumeIntroBackground h1 {
@@ -472,9 +454,6 @@ table, th, td {
 .resumeContentBackground {
     background-color: #063268;
     padding-bottom: 10px;
-}
-.resumeIntroContent p{
-    color: black;
 }
 
 .resumeContent {
@@ -495,7 +474,6 @@ table, th, td {
     padding-top: 30px;
     padding-bottom: 30px;
     font-family: 'Kaushan Script', cursive;
-    
 }
 
 .resumeContent h2 {
@@ -553,6 +531,7 @@ table, th, td {
     font-size: 24x;
     margin-bottom: 35px;
     margin-top: 35px;
+    color: #F7F3E3;
 }
 
 
