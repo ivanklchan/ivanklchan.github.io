@@ -345,7 +345,7 @@ nav a:hover {
     font-family: "Arial";
 }
 
-.physLab1F1, .physLab1F2, .physLab1F3, .physLab1F4, .physLab1F5, .endoStroke, .endoCT, .doubleDensity, .echoEndo, .starPatt, .bowelPerf, .absAbsTx, .absUS, .abdAbsCor, .absPatt{
+.physLab1F1, .physLab1F2, .physLab1F3, .physLab1F4, .physLab1F5, .endoStroke, .endoCT, .doubleDensity, .echoEndo, .starPatt, .bowelPerf, .absAbsTx, .absUS, .abdAbsCor, .absPatt, .phiLargeFFS, .phiSmallFFS, .sieLargeFFS, .sieSmallFFS{
     max-height: 100%;
     max-width: 100%;
 }
