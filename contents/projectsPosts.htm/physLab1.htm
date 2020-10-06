@@ -6,221 +6,219 @@
         <meta name="description" content="physics lab 1 report">
         <meta name="title" content="Physics Report 1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Physics Lab 1</title>
+        <title>Physics Report 1</title>
         <link rel="stylesheet" href="../../styles.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
         <script type="text/javascript" src="../../scripts.js"></script>
     </head>
     
-    <!--Navigation bar-->
-    <div class="topContact">
-        <h2>&lt;/ivanChan&gt;</h2>
-        <div class="contactLogos">
-            <a href="https://www.facebook.com/dontcallmeevan" title="link to facebook" target="_blank"><img src="../../images/facebook%20icon2.png" class="facebook"></a>
-            <a href="https://www.instagram.com/i.vanchan/" target="_blank"><img src="../../images/instagram%20logo.png" class="instagram"></a>
-            <a href="https://www.linkedin.com/in/ivan-chan-063b43144/" target="_blank"><img src="../../images/linkedin%20logo.png" class="linkedin"></a>
-            <a href="mailto:chank52@mcmaster.ca" title="link to facebook" target="_blank"><img src="../../images/email%20icon.png" class="email"></a>
-        </div>
-    </div>
-    
+    <!--HEADER/NAV BAR-->
+
     <header>
-        <nav role="navigation">
-            <a href="../../index.htm">HOME</a>
-            <a href="../../contents/about.htm">ABOUT</a>
-            <a href="../../contents/blog.htm">BLOG</a>
-            <a href="../../contents/projects.htm">PROJECTS</a>
-            <a href="../../contents/resume.htm">RESUME</a>
-        </nav> 
-    </header> 
-
-    <main class="projectContentBackground">
-        <div class="contentWrap">
-            
-<!-- MAIN COTENT -->
-            
-            <article class="projectContent lab1">
-                <h1>MEDRADSC 3G03 Physics Report 1</h1>
-                <h2>Melanie Chai, Ivan Chan, & Simranjeet Singh, 2019 Oct 30</h2>
-                <h1>Impact of collimation, patient Size and photocell selection on AEC function</h1>
-                
-                <h3>ABSTRACT</h3>
-                
-                <p>This experiment served to assess how AEC is impacted by changing variables. Collimation, centering, and patient size selection were all adjusted to assess how they impacted AEC performance and resultant image quality. A Phillip’s general radiography system was used in conjunction with a single pelvis phantom for the purposes of imaging. From the data acquired, it is clear that narrower collimation benefits image quality by reducing scatter and increasing fine detail. Correct positioning is also vital to image production as it ensures a correct exposure occurs for the patient size. Finally, technologists must estimate patient size appropriately to ensure proper AEC functioning. All of the above factors impact kVp and mAs, the two factors which determine the quality of image that can be produced. Proper estimation of size will allow AEC systems to calibrate their responses more favourably to the patient’s characteristics. While AEC is useful, it has limitations and technologists must make use of techniques described in this report to work the technology in their favour.</p>
-
-                <p><i>Keywords: automatic exposure control (AEC), digital radiography (DR), kilovoltage peak (kVp), milliampere-second (mAs), dose area product (DAP), exposure index (EI), image receptor (IR)</i></p>
-                
-                <h3>INTRODUCTION</h3>
-                
-                <p>This lab examined the effects of specific variables (collimation, patient size and photocell selection) on AEC function. AEC monitors real-time radiation levels to determine when an appropriate amount of exposure has been emitted, and thus when to stop exposure [1]. Dose refers to the amount of radiation absorbed by patients as a result of an exposure and is measured in Grays. It is directly related to DAP, which assesses patient dose while considering exposed area [2]. mAs indicates how much radiation is produced, by the number of photons emitted over a period of time. mAs refers to the product of the current applied to the x-ray tube, and the exposure time. The maximum energy of any individual electron is given by kVp; higher kVp results in higher photon and energy fluence, respectively, the number of photons and the amount of energy had by every photon [3]. Due to kVp’s dual impact, a 15% reduction in kVp has the same impact on imaging as halving mAs [4]. EI is a unitless measure inversely proportional to the detector air kerma, K, and is derived from a “characteristic” pixel value of the image [5]. EI informs the operator how well the system believes the exposure occurred. This information is all relevant to the functioning of AEC and assessing its response to changing scenarios. Experimental data should show that larger collimation will increase scatter and lower quality, smaller patient size should require lower exposure, and incorrect positioning will prevent proper AEC function.</p>
-                
-                <h3>MATERIALS AND METHODS</h3> 
-            
-                <p>This experiment was conducted with Philips x-ray equipment. A pelvis phantom was positioned erect and centred for a lateral L5-S1 at the wall bucky. The centre photocell and a small focal spot size were selected. The AEC and back-up timer were activated. Refer to Table 1 for technical factors of images. Due to equipment limitations, a FOV of 13 cm × 13 cm was used instead of 5” × 5”, and Figure 5 was scanned with the phantom moved anteriorly 2 inches, to simulate selection of a lateral detector cell.</p>  
-            
-                <h3>RESULTS</h3> 
-
-                <p>Refer to the Appendix for exposure information and x-ray images.</p>
-                
-                <h3>DISCUSSION</h3>
-
-                <p>Many data variables were compared from the images. When comparing Figure 1 and 2, more scatter was present in Figure 2 due to the larger collimation [3]. This caused more dose accumulation, and thus premature exposure cessation. With lower exposure, the resultant image had slightly more noise and less detail than Figure 1.  DAP of Figure 1 and 2 were similar because Figure 2 had a lower exposure over a larger area.</p>
-
-                <p>However, Figure 2 had a lower EI than Figure 1, meaning the system believed the exposure was higher. The scatter radiation was misinterpreted as a good exposure. Figure 5, with an extremely low EI of 11 was interpreted by the system to be greatly overexposed [5]. However, the AEC chamber was not directly behind the ROI and received unattenuated beam resulting in the x-ray beam cutting out early, creating an underexposed image. The images were still diagnostic due to the use of a DR system.</p>
-
-                <p>DR systems offer exceptional dynamic range, being able to capture data with huge variances in intensity [6]. Images widely under or overexposed remain permissible due to advanced algorithms that de-noise, sharpen, and modulate contrast. Post-processing is used to better display specific characteristics after an image is taken [4]. This versatility is not offered by film systems because the crystals embedded in the film darken linearly with exposure, and have dynamic range much narrower than DR [6]. Thus, film systems have much smaller margins of error, as small errors can cause completely non-diagnostic images. Therefore, if AEC is used and the exposure occurs for an excessively long period, the image will not be diagnostic and there would be excessive dose to patients. To prevent this, back-up timers exist which limit the maximum possible AEC exposure [2]. This limit prevents AEC from over-irradiating patients due to inaccurate positioning or possible malfunctioning. Back-up timers normally engage at about 1.5 times maximum exposure for an image type [2]. The maximum radiation allowed by a back-up timer is 500 mAs in Ontario [7].</p>
-
-                <p>Larger patients require higher mAs as more photons are needed to properly image them, while smaller patients require a lower mAs [2]. This relationship is also shown with the experimental data, with technical factors adjusting kVp down for smaller patient size. In addition, to protect smaller patients from over exposure, Philips has back-up timer mAs limits of 100 and 60 for children and infants, respectively. This is why both images using child and infant settings reached their limits, as the beam was forced to traverse the phantom’s adult thickness volume. Post-processing algorithms may have adjusted for a smaller expected patient, resulting in EI values indicating higher relative exposure. Finally, when the use of a lateral AEC cell was mimicked, exposure stopped very quickly with very low radiation release, but a very high EI. This is because the AEC chamber received almost unattenuated beam. Thus, it reached the upper limit of exposure very quickly and calculated a very highly exposed image, when in fact the phantom was underexposed.</p>
-
-                <h3>CONCLUSION</h3>
-
-                <p>The results highlight the importance of AEC, as it is a system that can adjust exposure to reduce dose while ensuring a sufficient number of photons reach the IR. With the use of real-time data, AEC decreases errors in technologists’ technical factor selection with different patients. Experimental data supported the theory about AEC. Larger collimation increased scatter, resulting in earlier termination of exposure while lower technical factors (used with smaller patient size) required longer exposures and yielded a lower dose to the patient. In addition, AEC stopped exposure quickly if improper positioning or photocell selection over a less dense area was done. It is vital to position properly over the ROI for AEC to function accurately. As well, technologists should be aware of pathologies or appliances that would affect AEC function. If these points are kept in mind, it will allow for the creation of better images while ensuring limited dose.</p>
-
-                <h3>APPENDIX</h3>
-
-                <table>
-                    <tr>
-                        <th>Figure</th>
-                        <th>SID (cm)</th>
-                        <th>Patient Size Setting</th>
-                        <th>Collimation</th>
-                        <th>kVp</th>
-                        <th>mAs</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>100</td>
-                        <td>Medium</td>
-                        <td>13 cm × 13 cm </td>
-                        <td>85</td>
-                        <td>74.8</td> 
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>100</td>
-                        <td>Medium</td>
-                        <td>26 cm × 26 cm </td>
-                        <td>85</td>
-                        <td>21.8</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>100</td>
-                        <td>Child</td>
-                        <td>13 cm × 13 cm </td>
-                        <td>77</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>100</td>
-                        <td>Infant</td>
-                        <td>13 cm × 13 cm </td>
-                        <td>70</td>
-                        <td>60.0</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>100</td>
-                        <td>Medium</td>
-                        <td>13 cm × 13 cm </td>
-                        <td>85</td>
-                        <td>1.81</td>
-                    </tr>    
-                </table>
-                <p><i>Table 1.</i> Technical factors of acquired images</p>
-                <br>
-                <table>
-                    <tr>
-                        <th>Figure</th>
-                        <th>EI_s</th>
-                        <th>μGym<sup>2</sup></th>
-                        <th>μGy</th>
-                        <th>mGy</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>233</td>
-                        <td>102.66</td>
-                        <td>6075 </td>
-                        <td>6.075</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>131</td>
-                        <td>105.42</td>
-                        <td>1559</td>
-                        <td>1.559</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>143</td>
-                        <td>47.24</td>
-                        <td>2795</td>
-                        <td>2.795</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>45</td>
-                        <td>22.40</td>
-                        <td>1325</td>
-                        <td>1.325</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>11</td>
-                        <td>2.33</td>
-                        <td>139</td>
-                        <td>0.139</td>
-                    </tr>    
-                </table>
-                <p><i>Table 2.</i> EI, DAP, and dose of acquired images.</p>
-                
-                <br>
-
-                <img class="physLab1F1" src="../../images/physLab1F1.png">
-                <p><i>Figure 1.</i> Radiograph acquired with 100 cm SID, medium patient size setting, 13 cm<sup>2</sup>.</p>
-                <br>
-                <img class="physLab1F2" src="../../images/physLab1F2.png">
-                <p><i>Figure 2.</i> Radiograph acquired with 100 cm SID, medium patient size setting, 26 cm<sup>2</sup>.</p>
-                <br>
-                <img class="physLab1F3" src="../../images/physLab1F3.png">
-                <p><i>Figure 3.</i> Radiograph acquired with 100 cm SID, small patient size setting, 13 cm<sup>2</sup>.</p>
-                <br>
-                <img class="physLab1F4" src="../../images/physLab1F4.png">
-                <p><i>Figure 4.</i> Radiograph acquired with 100 cm SID, infant patient size setting, 13 cm<sup>2</sup>.</p>
-                <br>
-                <img class="physLab1F5" src="../../images/physLab1F5.png">
-                <p><i>Figure 5.</i> Radiograph acquired with 100 cm SID, medium patient size setting, 13 cm<sup>2</sup>, centred 2" posterior to L5-S1.</p>
-
-                <h3>REFERENCES</h3>
-
-                <ol>
-                    <li>International Atomic Energy Agency. Automatic exposure control devices [Internet]. Human Health Campus - Automatic exposure control devices. [cited 2019Oct26]. Available from: https://humanhealth.iaea.org/HHW/MedicalPhysics/DiagnosticRadiology/PerformanceTesting/Automaticexposurecontroldevices/index.html
-                    </li>
-                    <li>Bushberg JT. The essential physics of medical imaging. Philadelphia, PA: Wolters Kluwer / Lippincott Williams & Wilkins; 2012.
-                    </li>
-                    <li>Podgoršak E. B. Radiation oncology physics: a handbook for teachers and students. Vienna: International Atomic Energy Agency; 2005.</li>
-                    <li>Ching W, Robinson J, Mcentee M. Patient-based radiographic exposure factor selection: a systematic review. Journal of Medical Radiation Sciences. 2014Jul;61(3):176–90.</li>
-                    <li>Seibert JA, Morin RL. The standardized exposure index for digital radiography: an opportunity for optimization of radiation dose to the pediatric population. Pediatric Radiology [Internet]. 2011 [cited 2019Oct24];41(5):573–81. Available from: http://www.citationmachine.net/items/new#</li>
-                    <li>Upstate Medical University. Exposure Issues [Internet]. Radiology | SUNY Upstate Medical University. [cited 2019Oct23]. Available from: http://www.upstate.edu/radiology/education/rsna/radiography/issues.php</li>
-                    <li>Government of Ontario. Healing Arts Radiation Protections Act [Internet]. Ontario.ca. 2018 [cited 2019Oct22]. Available from: https://www.ontario.ca/laws/statute/90h02</li>
-                </ol>
-
-            </article>
+        <div class="nav-bar">
+            <a href="../../index.htm" class="home">&lt;/ivanChan&gt; &#127968;</a>
+            <a href="../../contents/about.htm">Music &#127925;</a>
+            <a href="../../contents/blog.htm">Blogs &#128540</a>
+            <a href="../../contents/projects.htm">Projects &#128221;</a>
+            <a href="../../contents/resume.htm">Resume &#128188;</a>
         </div>
-    </main>
+    </header>
 
-    <footer>
-        <div class="contactInfo">
-            <div class="content-wrap">
-            <h1> Contact Me !</h1>
-                <a href="https://www.facebook.com/dontcallmeevan" title="link to facebook" target="_blank"><img src="../../images/facebook%20icon2.png" height="30" width="30"></a>
-                <a href="https://www.instagram.com/i.vanchan/" target="_blank"><img src="../../images/instagram%20logo.png" height="30" width="30"></a>
-                <a href="https://www.linkedin.com/in/ivan-chan-063b43144/" target="_blank"><img src="../../images/linkedin%20logo.png" height="30" width="30"></a>
-                <a href="mailto:chank52@mcmaster.ca" title="link to facebook" target="_blank"><img src="../../images/email%20icon.png" height="30" width="30"></a>
-                <p> Copyright 2019-2020 &copy; Ivan Chan</p>
+<!-- MAIN CONTENT -->
+
+    <div class="project-content-wrap">
+        <article class="project-content lab1">
+            <h1>Radiographic Instrumentation Physics Report I</h1>
+            <h2>McMaster University</h2>
+            <h1>Impact of collimation, patient size and photocell selection on AEC function</h1>
+            <h2>Melanie Chai, Ivan Chan & Simranjeet Singh. Oct 9, 2019</h2>
+            
+            <h3>ABSTRACT</h3>
+            
+            <p>This experiment served to assess how AEC is impacted by changing variables. Collimation, centering, and patient size selection were all adjusted to assess how they impacted AEC performance and resultant image quality. A Phillip’s general radiography system was used in conjunction with a single pelvis phantom for the purposes of imaging. From the data acquired, it is clear that narrower collimation benefits image quality by reducing scatter and increasing fine detail. Correct positioning is also vital to image production as it ensures a correct exposure occurs for the patient size. Finally, technologists must estimate patient size appropriately to ensure proper AEC functioning. All of the above factors impact kVp and mAs, the two factors which determine the quality of image that can be produced. Proper estimation of size will allow AEC systems to calibrate their responses more favourably to the patient’s characteristics. While AEC is useful, it has limitations and technologists must make use of techniques described in this report to work the technology in their favour.</p>
+
+            <p><i>Keywords: automatic exposure control (AEC), digital radiography (DR), kilovoltage peak (kVp), milliampere-second (mAs), dose area product (DAP), exposure index (EI), image receptor (IR)</i></p>
+            
+            <h3>INTRODUCTION</h3>
+            
+            <p>This lab examined the effects of specific variables (collimation, patient size and photocell selection) on AEC function. AEC monitors real-time radiation levels to determine when an appropriate amount of exposure has been emitted, and thus when to stop exposure [1]. Dose refers to the amount of radiation absorbed by patients as a result of an exposure and is measured in Grays. It is directly related to DAP, which assesses patient dose while considering exposed area [2]. mAs indicates how much radiation is produced, by the number of photons emitted over a period of time. mAs refers to the product of the current applied to the x-ray tube, and the exposure time. The maximum energy of any individual electron is given by kVp; higher kVp results in higher photon and energy fluence, respectively, the number of photons and the amount of energy had by every photon [3]. Due to kVp’s dual impact, a 15% reduction in kVp has the same impact on imaging as halving mAs [4]. EI is a unitless measure inversely proportional to the detector air kerma, K, and is derived from a “characteristic” pixel value of the image [5]. EI informs the operator how well the system believes the exposure occurred. This information is all relevant to the functioning of AEC and assessing its response to changing scenarios. Experimental data should show that larger collimation will increase scatter and lower quality, smaller patient size should require lower exposure, and incorrect positioning will prevent proper AEC function.</p>
+            
+            <h3>MATERIALS AND METHODS</h3> 
+        
+            <p>This experiment was conducted with Philips x-ray equipment. A pelvis phantom was positioned erect and centred for a lateral L5-S1 at the wall bucky. The centre photocell and a small focal spot size were selected. The AEC and back-up timer were activated. Refer to Table 1 for technical factors of images. Due to equipment limitations, a FOV of 13 cm × 13 cm was used instead of 5” × 5”, and Figure 5 was scanned with the phantom moved anteriorly 2 inches, to simulate selection of a lateral detector cell.</p>  
+        
+            <h3>RESULTS</h3> 
+
+            <p>Refer to the Appendix for exposure information and x-ray images.</p>
+            
+            <h3>DISCUSSION</h3>
+
+            <p>Many data variables were compared from the images. When comparing Figure 1 and 2, more scatter was present in Figure 2 due to the larger collimation [3]. This caused more dose accumulation, and thus premature exposure cessation. With lower exposure, the resultant image had slightly more noise and less detail than Figure 1.  DAP of Figure 1 and 2 were similar because Figure 2 had a lower exposure over a larger area.</p>
+
+            <p>However, Figure 2 had a lower EI than Figure 1, meaning the system believed the exposure was higher. The scatter radiation was misinterpreted as a good exposure. Figure 5, with an extremely low EI of 11 was interpreted by the system to be greatly overexposed [5]. However, the AEC chamber was not directly behind the ROI and received unattenuated beam resulting in the x-ray beam cutting out early, creating an underexposed image. The images were still diagnostic due to the use of a DR system.</p>
+
+            <p>DR systems offer exceptional dynamic range, being able to capture data with huge variances in intensity [6]. Images widely under or overexposed remain permissible due to advanced algorithms that de-noise, sharpen, and modulate contrast. Post-processing is used to better display specific characteristics after an image is taken [4]. This versatility is not offered by film systems because the crystals embedded in the film darken linearly with exposure, and have dynamic range much narrower than DR [6]. Thus, film systems have much smaller margins of error, as small errors can cause completely non-diagnostic images. Therefore, if AEC is used and the exposure occurs for an excessively long period, the image will not be diagnostic and there would be excessive dose to patients. To prevent this, back-up timers exist which limit the maximum possible AEC exposure [2]. This limit prevents AEC from over-irradiating patients due to inaccurate positioning or possible malfunctioning. Back-up timers normally engage at about 1.5 times maximum exposure for an image type [2]. The maximum radiation allowed by a back-up timer is 500 mAs in Ontario [7].</p>
+
+            <p>Larger patients require higher mAs as more photons are needed to properly image them, while smaller patients require a lower mAs [2]. This relationship is also shown with the experimental data, with technical factors adjusting kVp down for smaller patient size. In addition, to protect smaller patients from over exposure, Philips has back-up timer mAs limits of 100 and 60 for children and infants, respectively. This is why both images using child and infant settings reached their limits, as the beam was forced to traverse the phantom’s adult thickness volume. Post-processing algorithms may have adjusted for a smaller expected patient, resulting in EI values indicating higher relative exposure. Finally, when the use of a lateral AEC cell was mimicked, exposure stopped very quickly with very low radiation release, but a very high EI. This is because the AEC chamber received almost unattenuated beam. Thus, it reached the upper limit of exposure very quickly and calculated a very highly exposed image, when in fact the phantom was underexposed.</p>
+
+            <h3>CONCLUSION</h3>
+
+            <p>The results highlight the importance of AEC, as it is a system that can adjust exposure to reduce dose while ensuring a sufficient number of photons reach the IR. With the use of real-time data, AEC decreases errors in technologists’ technical factor selection with different patients. Experimental data supported the theory about AEC. Larger collimation increased scatter, resulting in earlier termination of exposure while lower technical factors (used with smaller patient size) required longer exposures and yielded a lower dose to the patient. In addition, AEC stopped exposure quickly if improper positioning or photocell selection over a less dense area was done. It is vital to position properly over the ROI for AEC to function accurately. As well, technologists should be aware of pathologies or appliances that would affect AEC function. If these points are kept in mind, it will allow for the creation of better images while ensuring limited dose.</p>
+
+            <h3>APPENDIX</h3>
+
+            <table>
+                <tr>
+                    <th>Figure</th>
+                    <th>SID (cm)</th>
+                    <th>Patient Size Setting</th>
+                    <th>Collimation</th>
+                    <th>kVp</th>
+                    <th>mAs</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>Medium</td>
+                    <td>13 cm × 13 cm </td>
+                    <td>85</td>
+                    <td>74.8</td> 
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>100</td>
+                    <td>Medium</td>
+                    <td>26 cm × 26 cm </td>
+                    <td>85</td>
+                    <td>21.8</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>100</td>
+                    <td>Child</td>
+                    <td>13 cm × 13 cm </td>
+                    <td>77</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>100</td>
+                    <td>Infant</td>
+                    <td>13 cm × 13 cm </td>
+                    <td>70</td>
+                    <td>60.0</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>100</td>
+                    <td>Medium</td>
+                    <td>13 cm × 13 cm </td>
+                    <td>85</td>
+                    <td>1.81</td>
+                </tr>    
+            </table>
+            <p><i>Table 1.</i> Technical factors of acquired images</p>
+            <br>
+            <table>
+                <tr>
+                    <th>Figure</th>
+                    <th>EI_s</th>
+                    <th>μGym<sup>2</sup></th>
+                    <th>μGy</th>
+                    <th>mGy</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>233</td>
+                    <td>102.66</td>
+                    <td>6075 </td>
+                    <td>6.075</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>131</td>
+                    <td>105.42</td>
+                    <td>1559</td>
+                    <td>1.559</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>143</td>
+                    <td>47.24</td>
+                    <td>2795</td>
+                    <td>2.795</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>45</td>
+                    <td>22.40</td>
+                    <td>1325</td>
+                    <td>1.325</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>11</td>
+                    <td>2.33</td>
+                    <td>139</td>
+                    <td>0.139</td>
+                </tr>    
+            </table>
+            <p><i>Table 2.</i> EI, DAP, and dose of acquired images.</p>
+            
+            <br>
+
+            <img class="physLab1F1" src="../../images/physLab1F1.png">
+            <p><i>Figure 1.</i> Radiograph acquired with 100 cm SID, medium patient size setting, 13 cm<sup>2</sup>.</p>
+            <br>
+            <img class="physLab1F2" src="../../images/physLab1F2.png">
+            <p><i>Figure 2.</i> Radiograph acquired with 100 cm SID, medium patient size setting, 26 cm<sup>2</sup>.</p>
+            <br>
+            <img class="physLab1F3" src="../../images/physLab1F3.png">
+            <p><i>Figure 3.</i> Radiograph acquired with 100 cm SID, small patient size setting, 13 cm<sup>2</sup>.</p>
+            <br>
+            <img class="physLab1F4" src="../../images/physLab1F4.png">
+            <p><i>Figure 4.</i> Radiograph acquired with 100 cm SID, infant patient size setting, 13 cm<sup>2</sup>.</p>
+            <br>
+            <img class="physLab1F5" src="../../images/physLab1F5.png">
+            <p><i>Figure 5.</i> Radiograph acquired with 100 cm SID, medium patient size setting, 13 cm<sup>2</sup>, centred 2" posterior to L5-S1.</p>
+
+            <h3>REFERENCES</h3>
+
+            <ol>
+                <li>International Atomic Energy Agency. Automatic exposure control devices [Internet]. Human Health Campus - Automatic exposure control devices. [cited 2019Oct26]. Available from: https://humanhealth.iaea.org/HHW/MedicalPhysics/DiagnosticRadiology/PerformanceTesting/Automaticexposurecontroldevices/index.html
+                </li>
+                <li>Bushberg JT. The essential physics of medical imaging. Philadelphia, PA: Wolters Kluwer / Lippincott Williams & Wilkins; 2012.
+                </li>
+                <li>Podgoršak E. B. Radiation oncology physics: a handbook for teachers and students. Vienna: International Atomic Energy Agency; 2005.</li>
+                <li>Ching W, Robinson J, Mcentee M. Patient-based radiographic exposure factor selection: a systematic review. Journal of Medical Radiation Sciences. 2014Jul;61(3):176–90.</li>
+                <li>Seibert JA, Morin RL. The standardized exposure index for digital radiography: an opportunity for optimization of radiation dose to the pediatric population. Pediatric Radiology [Internet]. 2011 [cited 2019Oct24];41(5):573–81. Available from: http://www.citationmachine.net/items/new#</li>
+                <li>Upstate Medical University. Exposure Issues [Internet]. Radiology | SUNY Upstate Medical University. [cited 2019Oct23]. Available from: http://www.upstate.edu/radiology/education/rsna/radiography/issues.php</li>
+                <li>Government of Ontario. Healing Arts Radiation Protections Act [Internet]. Ontario.ca. 2018 [cited 2019Oct22]. Available from: https://www.ontario.ca/laws/statute/90h02</li>
+            </ol>
+
+        </article>
+    </div>
+
+<!--  FOOTER  -->
+    
+<footer>
+    <div class="footer-content-wrap">
+        <div class="footer-info">
+            <div class="footer-content-items">
+                <div class="footer-content-item footer-logo">
+                    <h1>&lt;/ivanChan&gt;</h1>
+                    <p class = "copyright-text"> IVAN CHAN &copy; 2019-2020</p>
+                </div>
+                <div class="footer-content-item connect">
+                    <h1>Connect</h1>
+                        <a href="https://www.facebook.com/dontcallmeevan" title="link to facebook" target="_blank"><img src="../../images/facebook%20icon2.png" height="30" width="30"></a>
+                        <a href="https://www.instagram.com/i.vanchan/" target="_blank"><img src="../../images/instagram%20logo.png" height="30" width="30"></a>
+                        <a href="https://www.linkedin.com/in/ivan-chan-063b43144/" target="_blank"><img src="../../images/linkedin%20logo.png" height="30" width="30"></a>
+                        <a href="mailto:chank52@mcmaster.ca" title="link to facebook" target="_blank"><img src="../../images/email%20icon.png" height="30" width="30"></a>
+                </div>
             </div>
         </div>
-    </footer>    
+    </div>
+</footer>    
 </html>
