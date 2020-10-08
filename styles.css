@@ -723,6 +723,18 @@ footer {
     .navbar-links.active {
         display: flex;
     }
+
+    /* Resume for mobile and iPad */
+
+    .resume-intro-wrap {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .resume-content-wrap {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 
 /* compatible with screens < 650 px */
@@ -826,4 +838,70 @@ footer {
 
     .footer-content-wrap {
         max-width: 100%;
+    }
+
+
+    /* RESUME MOBILE  */
+
+    .resume-intro-background h1 {
+        font-size: 1.5em;
+    }
+    
+    .resume-intro-background p {
+        font-size: 0.8em;
+    }
+    
+    .resume-intro-wrap {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+    .resume-background {
+        width: 100%;
+    }
+
+    .resume-items {
+        display: flex;
+    }
+    
+    .resume-item-left {
+        flex: 5;
+    }
+    
+    .resume-item-left > h2 {
+        font-size: 0.8em;
+    }
+    
+    .resume-item-left > p {
+
+        font-size: 0.75em;
+    }
+    
+    .resume-item-right > p {
+        flex: 1;
+        font-size: 0.5em;
+    }
+    
+    .resume-item-right > p:nth-of-type(2){
+        margin-top: 0;
+    }
+
+    .resume-content-wrap {
+        max-width: 95%;
+    }
+
+    .resume-content-wrap ul {
+        margin: 0.5em;
+    }
+
+    .resume-content-wrap li {
+        font-size: 0.7em;
+    }
+    
+    .category {
+        font-size: 1.2em;
+        margin-bottom: 0 ;
+        margin-top: 0.8em;
+    }
+
 }
