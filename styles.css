@@ -394,6 +394,8 @@ blockquote {
 .project-title-items > img {
     width: 500px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .project-title-items > h1 {
@@ -699,8 +701,6 @@ footer {
         
         .project-title-items > img {
             width: 380px;
-            display: block; 
-            margin: 0 auto;
         }
         
         .project-title-items > h1 {
@@ -798,8 +798,6 @@ footer {
     
     .project-title-items > img {
         width: 250px;
-        display: block;
-        margin: 0 auto;
     }
 
     .project-home-wrap {
@@ -1023,8 +1021,6 @@ footer {
     
     .project-title-items > img {
         width: 250px;
-        display: block;
-        margin: 0 auto;
     }
     
     .project-title-items > h1 {
