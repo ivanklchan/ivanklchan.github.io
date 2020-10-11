@@ -262,6 +262,8 @@ blockquote {
 .blog-title-item > img {
     width: 550px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .blog-title-item > h1 {
@@ -293,12 +295,6 @@ blockquote {
     margin: 0 auto;
     margin-bottom: 10px;
 }
-
-/* .blogLinks {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    color: darkblue;
-} */
 
 .blog-content h1 {
     font-size: 2.5em;
@@ -726,11 +722,63 @@ footer {
         .project-intro-item p {
             font-size: 0.75em;
         }
+
+        /* Blog page < 1300 */
+
+        .blog-intro-item > p {
+            font-size: 0.7em;;
+        }
+
+        .blog-title-wrap {
+            max-width: 90%;
+        }
+        
+        .blog-title-item {
+            padding: 20px;
+        }
+        
+        .blog-title-item > img {
+            width: 450px;
+        }
+        
+        .blog-title-item > h1 {
+            font-size: 2em;
+        }
+
+        .blog-home-wrap {
+            /* max-width: 95%; */
+        }
+    
+        .blog-items {
+            padding: 10px
+        }
+        
+        .blog-items > h1 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        
+        .blog-items p {
+            font-size: 1em;
+        }
+        
+        .btn-links {
+            padding: 5px 5px;
+            font-size: 0.8em;
+        }
+
 }
 
 /* Navigation collapse to toggle burger when the screen size < 915px, this is the point when the emojis wrap around the text.*/
 
 @media screen and (max-width: 930px) {
+
+    .brand-name {
+        font-size: 1.3em;
+        letter-spacing: 0.15em;
+        margin: 1em;
+    }
+
     .toggle-button {
         display: flex;
         margin: 20px 10px;
@@ -825,19 +873,80 @@ footer {
         padding: 5px 5px;
         font-size: 0.8em;
     }
+
+    /* Blog pages < 930 px */
+
+    .blog-intro-wrap {
+        max-width: 95%;
+    }
+
+    .blog-intro-item > p {
+        font-size: 0.6em;;
+    }
+
+    .blog-title-wrap {
+        max-width: 95%;
+    }
+    
+    .blog-title-item {
+        padding: 10px;
+    }
+    
+    .blog-title-item > img {
+        width: 350px;
+    }
+    
+    .blog-title-item > h1 {
+        font-size: 1.7em;
+    }
+
+    .blog-title-item > p {
+        font-size: 1em;
+    }
+
+    .blog-home-wrap {
+        max-width: 95%;
+    }
+
+    .blog-items {
+        padding: 10px
+    }
+    
+    .blog-items > h1 {
+        margin-top: 0;
+        font-size: 1.1em;
+    }
+    
+    .blog-items p {
+        font-size: 0.9em;
+    }
+
+    /* Footer */
+
+    .footer-content-item > h1 {
+        padding: 5px 20px;
+    }
 }
 
 /* compatible with screens < 650 px */
 
 @media screen and (max-width: 650px) {
-
-    body {
-    }
     
     .brand-name {
-        font-size: 1em;
+        font-size: 0.8em;
         letter-spacing: 0.15em;
-        margin:2em 1em;
+        margin:1.5em 1em;
+    }
+
+    .toggle-button {
+        margin: 12px 0;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: #F7F3E3;
+        border-radius: 10px;
     }
     
     .home-body > p {
@@ -913,6 +1022,7 @@ footer {
 
     .footer-content-item h1{
         font-size: 0.8em;
+        padding: 5px 20px;
     }
 
     .footer-info a{
@@ -1044,4 +1154,64 @@ footer {
     .project-items > p {
         font-size: 0.75em;
     }
+
+    /* blog for mobile devices  */
+
+    .blog-intro-wrap {
+        max-width: 100%;
+        margin:0 auto;
+    }
+
+    .blog-intro-item > p {
+        font-size: 0.5em;;
+    }
+
+    .blog-title-wrap {
+        max-width: 95%;
+        display: block;
+    }
+    
+    .blog-title-item {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .blog-title-item > img {
+        width: 300px;
+    }
+    
+    .blog-title-item > h1 {
+        font-size: 1.5em;
+    }
+
+    .blog-title-item > p {
+        font-size: 0.9em;
+    }
+
+    .blog-home-wrap {
+        max-width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .blog-items {
+        padding: 10px
+    }
+    
+    .blog-items > h1 {
+        margin-top: 0;
+        font-size: 1em;
+    }
+    
+    .blog-items p {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 325px) {
+
+    .blog-title-item > img {
+        width: 260px;
+    }
+
 }
