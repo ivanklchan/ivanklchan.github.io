@@ -12,6 +12,7 @@ COLOURS
 #000000 - black
 #202020 - dark grey
 lightcoral
+
 /* GLOBAL */
 html{ 
     font-family: 'Montserrat', sans-serif;
@@ -479,62 +480,17 @@ th, td {
     text-align-last: left;
 }
 
-/* ABOUT */
+/* MUSIC */
 
-.aboutIntroBackground {
-    background-image: url(images/rainbow-colours.jpg);
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background-position: center;
+.music-intro-wrap { 
+    max-width: 90%;
+    margin: 0 auto;
+    
 }
 
-
-.aboutIntroContent h1{
-    font-size: 72px;
-}
-
-.aboutIntroContent p {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.aboutContent {
-    background-color: #063268;  
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.aboutContent p {
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: lighter;
-    color: #F7F3E3;
-}
-
-.aboutContent li {
-    font-family: 'Montserrat', sans-serif;
-}
- 
-
-.aboutContent p:first-of-type {
-    margin: 0;
-    padding: 0;
-}
-
-.aboutContent h3 {
-    color: lightcoral;
-    font-size: 24px;
-}
-
-.aboutContent li {
-    color: #F7F3E3; 
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.aboutContent a{
-    color: lightcoral;
-    text-decoration: none;
+.music-intro-pic {
+    display: block;
+    max-width: 100%;
 }
 
 .ivanHead {
@@ -577,44 +533,49 @@ th, td {
     margin: 0 auto;
 }
 
+.category {
+    text-align: left;
+    margin: 0.9em 0 0.4em 0;
+    color:  #b3b3b3;
+    letter-spacing: -0.07em;
+}
+
+.resume-content-wrap > h2 {
+    font-size: 1.5em;
+    color: lightcoral;
+    margin: 10px 0 0 0;
+    letter-spacing: 0;
+}
+
 .resume-items {
     display: flex;
 }
 
-.resume-item-left {
-    flex: 4;
+.resume-items p {
+    margin: 0.2em 0;
+    font-size: 1.5em;
 }
 
-.resume-item-left > h2 {
-    font-size: 1.5em;
-    color: lightcoral;
-    margin-bottom: 10px;
-    letter-spacing: 0;
+.resume-item-left {
+    flex: 2;
 }
 
 .resume-item-left > p {
     color: #b3b3b3;
+}
+
+.resume-item-right > p {
+    text-align: right;
+    letter-spacing: 0.01em;
+}
+
+.resume-pos-descript > p {
+    color: #b3b3b3;
     margin: 0;
 }
 
-.resume-item-right {
-    flex: 1;
-    text-align: right;
-    letter-spacing: 0.01em;
-    font-size: 1.5em;
-}
-
-.second-date-entry > p{
-    margin-top: 0;
-}
-
-.category {
-    text-align: left;
-    font-size: 35px;
-    margin-bottom: 15px;
-    margin-top: 40px;
-    color:  #b3b3b3;
-    letter-spacing: -0.07em;
+.resume-pos-descript > ul {
+    margin: 10px 0;
 }
 
 /*FOOTER*/
@@ -745,9 +706,9 @@ footer {
             font-size: 2em;
         }
 
-        .blog-home-wrap {
-            /* max-width: 95%; */
-        }
+        /* .blog-home-wrap {
+             max-width: 95%;
+        } */
     
         .blog-items {
             padding: 10px
@@ -767,6 +728,31 @@ footer {
             font-size: 0.8em;
         }
 
+        /* Resume for 930 < px < 1300 */
+
+        .category {
+            font-size: 1.9em;
+        }
+
+        .resume-content-wrap {
+            max-width: 80%;
+        }
+        
+        .resume-content-wrap > h2 {
+            font-size: 1.25em;
+        }
+        
+        .resume-item-left > p {
+            font-size: 1.1em;
+        }
+        
+        .resume-item-right > p {
+            font-size: 1.1em;
+        }
+        
+        .resume-content-wrap li {
+            font-size: 1em;
+        }
 }
 
 /* Navigation collapse to toggle burger when the screen size < 915px, this is the point when the emojis wrap around the text.*/
@@ -820,7 +806,26 @@ footer {
 
     .resume-content-wrap {
         max-width: 90%;
-        margin: 0 auto;
+    }
+
+    .category {
+        font-size: 1.6em;
+    }
+    
+    .resume-content-wrap > h2 {
+        font-size: 1.05em;
+    }
+    
+    .resume-item-left > p {
+        font-size: 1em;
+    }
+    
+    .resume-item-right > p {
+        font-size: 1em;
+    }
+    
+    .resume-content-wrap li {
+        font-size: 0.9em;
     }
 
     /* Project for < 930 px */
@@ -837,7 +842,6 @@ footer {
     
     .project-intro-item p {
         font-size: 0.6em;
-        margin-bottom
     }
 
     .project-title-wrap {
@@ -950,36 +954,26 @@ footer {
     }
     
     .home-body > p {
-        text-align: center;
-        letter-spacing: 1em;
-        font-weight: 800;
         font-size: 0.8em;
         margin: 50px;
     }
 
     .home-intro-content h1 {
-        color: #F7F3E3;
-        font-family: 'Kaushan Script', cursive;   
-        font-size: 50px;
+        font-size: 3em;
     }
     
     .home-intro-content p {
-        color: #F7F3E3;
         font-size: 1em;
-        letter-spacing: 1;
-        margin: 3px;
     }
     
     .home-content-wrap {
         display: block;
-        max-width: 90%;
+        max-width: 92%;
     }
 
     .home-content-item {
-        background-color: #063268;;
         padding: 20px;
         margin: 20px 0;
-        border-radius: 20px;
     }
     
     .home-content-item > p {
@@ -1064,23 +1058,21 @@ footer {
         display: flex;
     }
     
+    .resume-items p {
+        font-size: 0.8em;
+    }
+    
     .resume-item-left {
-        flex: 5;
+        flex: 2;
     }
-    
-    .resume-item-left > h2 {
-        font-size: 0.78em;
-    }
-    
-    .resume-item-left > p {
-        font-size: 0.73em;
-        padding-left: 1em;
-    }
-    
-    .resume-item-right > p {
+
+    .resume-item-right {
         flex: 1;
-        font-size: 0.5em;
-        margin: 10px 0;
+    }
+
+    .resume-pos-descript > p{
+        font-size: 0.75em;
+        padding-left: 1em;
     }
 
     .resume-content-wrap {
@@ -1093,11 +1085,7 @@ footer {
     }
 
     .resume-content-wrap li {
-        font-size: 0.7em;
-    }
-    
-    .second-date-entry > p{
-        margin-top: 0;
+        font-size: 0.75em;
     }
 
     .category {
@@ -1159,7 +1147,11 @@ footer {
 
     .blog-intro-wrap {
         max-width: 100%;
-        margin:0 auto;
+    }
+
+    .blog-intro-item {
+        max-width: 95%;
+        margin: 0 auto;
     }
 
     .blog-intro-item > p {
@@ -1206,6 +1198,23 @@ footer {
     .blog-items p {
         font-size: 0.7em;
     }
+
+    /* Music page < 650 px */
+
+    .music-intro-wrap { 
+        max-width: 100%; 
+    }
+    
+    .music-intro-pic {
+        display: block;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .music-intro-item > p {
+        font-size: 0.8em;
+    }
+
 }
 
 @media screen and (max-width: 325px) {
