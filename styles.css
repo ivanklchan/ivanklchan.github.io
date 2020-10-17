@@ -4,6 +4,7 @@ FONTS
 font-family: 'Montserrat', sans-serif;
 font-family: 'PT Serif', serif;
 font-family: 'Kaushan Script', cursive;
+font-family: 'Merriweather', serif;
 
 COLOURS
 
@@ -292,7 +293,7 @@ blockquote {
 }
 
 .blog-content-wrap {
-    max-width: 70%;
+    max-width: 60%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -306,7 +307,7 @@ blockquote {
     font-size: 1.1em;
     color: lightcoral;
     margin-bottom: 40px;
-    letter-spacing: 0;
+    letter-spacing: 0; 
 }
 
 .blog-content h3 {
@@ -318,7 +319,11 @@ blockquote {
 }
 
 .blog-content p {
-    line-height: 1.6;
+    line-height: 2.3;
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: 0;
+    font-family: 'Playfair Display', serif;
 }
 
 .blog-content a{
@@ -330,15 +335,9 @@ blockquote {
     font-weight: 100;
 }
 
-/* ARCHIVE */
-
-/* .taiwanFlag {
-    max-height: 80%;
-    max-width: 80%;
-    display: block;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
+.blog-content > img {
+    max-width: 100%;
+}
 
 .clinicalBoys {
     max-height: 80%;
