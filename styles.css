@@ -416,16 +416,16 @@ blockquote {
     letter-spacing: -0.05em;
 }
 
-.project-content-wrap {
-    max-width: 70%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-
 .project-home-wrap {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.project-content-wrap {
+    max-width: 70%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -683,6 +683,10 @@ footer {
             font-size: 0.75em;
         }
 
+        .project-content-wrap {
+            max-width: 80%;
+        }
+        
         /* Blog page < 1300 */
 
         .blog-intro-item > p {
@@ -752,6 +756,13 @@ footer {
         .resume-content-wrap li {
             font-size: 1em;
         }
+
+        /* Blog posts to fit to < 1300 px */
+
+        .blog-content-wrap {
+            max-width: 80%;
+        }
+
 }
 
 /* Navigation collapse to toggle burger when the screen size < 915px, this is the point when the emojis wrap around the text.*/
@@ -877,6 +888,34 @@ footer {
         font-size: 0.8em;
     }
 
+    .project-content-wrap {
+        max-width: 85%;
+    }
+    
+    .project-content li {
+        font-size: 1em;
+    }
+
+    .project-content p {
+        font-size: 1em;
+    }
+    
+    .project-content h1{
+        font-size: 2em;
+    }
+    
+    .project-content h2 {
+        font-size: 1em;
+    }
+
+    .project-content h3 {
+        font-size: 1.2em
+    }
+
+    .project-content h3:first-of-type, .project-content h3:last-of-type{
+        font-size: 1.5em;
+    }
+
     /* Blog pages < 930 px */
 
     .blog-intro-wrap {
@@ -924,6 +963,28 @@ footer {
         font-size: 0.9em;
     }
 
+    /* Blog posts < 930 px */
+
+    .blog-content-wrap {
+        max-width: 80%;
+    }
+    
+    .blog-content h1 {
+        font-size: 2em;
+    }
+    
+    .blog-content h2 {
+        font-size: 1em;
+    }
+    
+    .blog-content h3 {
+        font-size: 1.5em;
+    }
+    
+    .blog-content p {
+        font-size: 1.2em;
+    }
+    
     /* Footer */
 
     .footer-content-item > h1 {
@@ -1130,7 +1191,6 @@ footer {
 
     .project-items {
         margin: 1em 0em;
-        
         max-width: 95%;
     }
 
@@ -1140,6 +1200,40 @@ footer {
 
     .project-items > p {
         font-size: 0.75em;
+    }
+    
+    .project-content-wrap {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-content > ol {
+        padding-left: 0;
+    }
+
+    .project-content li {
+        font-size: 0.8em;
+    }
+
+
+    .project-content p {
+        font-size: 1em;
+    }
+    
+    .project-content h1{
+        font-size: 1.5em;
+    }
+    
+    .project-content h2 {
+        font-size: 0.8em;
+    }
+
+    .project-content h3 {
+        font-size: 1em
+    }
+
+    .project-content h3:first-of-type, .project-content h3:last-of-type{
+        font-size: 1.1em;
     }
 
     /* blog for mobile devices  */
@@ -1196,6 +1290,27 @@ footer {
     
     .blog-items p {
         font-size: 0.7em;
+    }
+
+    .blog-content-wrap {
+        max-width: 90%;
+    }
+    
+    .blog-content h1 {
+        font-size: 1.8em;
+    }
+    
+    .blog-content h2 {
+        font-size: 0.8em;
+    }
+    
+    .blog-content h3 {
+        font-size: 1.1em;
+        margin-top: 1.8em
+    }
+    
+    .blog-content p {
+        font-size: 1em;
     }
 
     /* Music page < 650 px */
