@@ -577,6 +577,32 @@ th, td {
     margin: 10px 0;
 }
 
+
+/* Read More Section */
+
+.read-more-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+}
+
+.read-more-items {
+    background-color: #303030;
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.read-more-items > h1 {
+    color: lightcoral;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.read-more-items > p{
+    line-height: 1.5;
+    font-size: 1em;
+}
+
 /*FOOTER*/
 
 footer {
@@ -763,6 +789,15 @@ footer {
             max-width: 80%;
         }
 
+        /* Read More */
+        .read-more-wrap {
+            display: block;
+        }
+        
+        .read-more-items {
+            margin: 1em 0;
+        }
+
 }
 
 /* Navigation collapse to toggle burger when the screen size < 915px, this is the point when the emojis wrap around the text.*/
@@ -893,7 +928,7 @@ footer {
     }
     
     .project-content li {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .project-content p {
@@ -989,6 +1024,19 @@ footer {
 
     .footer-content-item > h1 {
         padding: 5px 20px;
+    }
+
+    /* Read More */
+    .read-more-wrap {
+        display: block;
+    }
+    
+    .read-more-items {
+        padding: 1em;
+    }
+    
+    .read-more-items > h1 {
+        font-size: 1.5em;
     }
 }
 
@@ -1326,6 +1374,23 @@ footer {
     }
 
     .music-intro-item > p {
+        font-size: 0.8em;
+    }
+
+    /* Read More Mobile */
+    .read-more-wrap {
+        display: block;
+    }
+    
+    .read-more-items {
+        padding: 0.8em;
+    }
+    
+    .read-more-items > h1 {
+        font-size: 1em;
+    }
+
+    .read-more-items > p {
         font-size: 0.8em;
     }
 
