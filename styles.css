@@ -16,30 +16,28 @@ lightcoral
 
 /* GLOBAL */
 html{ 
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     color: #F7F3E3;
-    letter-spacing: -0.05em;
-    background-color: #202020
+    letter-spacing: -0.04rem;
+    background-color: #202020;
 }
 
 .intro-content-wrap {
-    max-width: 90%;
     margin: 0 auto;
     padding: 10px;
+    max-width: 90%;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     line-height: 1.5;
-    font-size: 20px;
 }
 
 li {
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
     font-weight: 100;
     line-height: 1.6;
-    font-size: 20px;
 }
 
 a {
@@ -52,16 +50,12 @@ a {
     padding: 20px;
 }
 
-blockquote {
-    font-size: 18px;
-}
-
 .btn-links {
+    padding: 8px 8px;
     background-color: #202020;
     border: none;
     border-radius: 4px;
     text-decoration: none;
-    padding: 10px 10px;
 }
 
 /* NAVIGATION */
@@ -72,9 +66,9 @@ blockquote {
 }
 
 .brand-name {
-    font-size: 1.5em;
-    letter-spacing: 0.15em;
-    margin: 1em;
+    font-size: 1.5rem;
+    margin: 2rem;
+    letter-spacing: 0.2rem;
 }
 
 .nav-bar ul {
@@ -84,24 +78,24 @@ blockquote {
 }
 
 .nav-bar li a {
-    padding: 5px 10px;
-    margin: 10px;
-    color: white;
-    font-size: 18px;
     display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.3125rem 0.625rem;
+    margin: 0.6rem;
+    color: white;
 }
 
 .nav-bar a:hover {
     background-color: #484848;
-    border-radius: 15px;
+    border-radius: 1rem;
     transition: all 0.3s ease 0s;
 }
 
 .toggle-button{
+    display: none;
     position: absolute;
     top: 0.75rem;
     right: 1rem;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -117,8 +111,8 @@ blockquote {
 
 
 .facebook, .instagram, .email, .linkedin {
-    height: 30px;
-    width: 30px;
+    height: 1.875rem;
+    width: 1.875rem;
 }
 
 /* HOME */
@@ -132,7 +126,6 @@ blockquote {
 
 .photo-credit {
     color: white; 
-    font-size: 1em;
     text-align: center;
 }
 
@@ -141,50 +134,52 @@ blockquote {
 }
 
 .home-intro-content h1 {
-    color: #F7F3E3;
     font-family: 'Kaushan Script', cursive;   
-    font-size: 80px;
+    font-size: 5rem;
+    color: #F7F3E3;
 }
 
 .home-intro-content p {
-    color: #F7F3E3;
-    font-size: 25px;
-    letter-spacing: 1;
+    font-size: 2rem;
     margin: 3px;
+    color: #F7F3E3;
+    letter-spacing: 1;
 }
+
+
+/* The PROJECT and BLOG HIGHLIGHTS words */
 
 .home-body > p {
+    font-size: 1.5rem;
+    margin: 3.13rem;
     text-align: center;
-    letter-spacing: 1em;
+    letter-spacing: 1.2em;
     font-weight: 800;
-    font-size: 1.5em;
-    margin: 50px;
-}
+}   
 
 .home-content-wrap{
-    max-width: 85%;
-    margin: auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 1em;
+    grid-gap: 1rem;
+    max-width: 85%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    border-radius: 1.25rem;
 }
 
 .home-text-wrap{
-    max-width: 86%;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 86%;
+    margin: auto;
 }
 
 .home-text-item {
     background-color: #303030;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px;
-    /* max-height: 450px; */
-    grid-gap: 1em;
+    padding: 1.25rem;
+    margin: 0.625rem;
+    grid-gap: 1rem;
+    border-radius: 1.25rem;
 }
 
 .home-content-item {
@@ -193,38 +188,32 @@ blockquote {
     border-radius: 20px;
 }
 
-.home-content-item > p {
-    font-size: 1em;
-}
-
 .home-content-item > h1 {
+    font-size: 1.5rem;
     margin-top: 0;
     color: lightcoral;
-    font-size: 1.5em;
 }
 
-.pinned-image {
+.cover-image {
     max-width: 100%;
-    max-height: auto;
     object-fit: cover;
 }
 
 .home-text-item h1 {
-    font-size: 20px;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
     letter-spacing: -0.03rem;
-    margin: 0;
     color: lightcoral;
-    font-size: 1.4em;
 }
 
 .home-text-item p {
     overflow: hidden;
     text-overflow: ellipsis;
-    letter-spacing: -0.03em;
-    font-size: 1em;
 }
 
 /* BLOG */
+
+/* Blog title page  */
 
 .blog-intro-wrap {
     max-width: 85%;
@@ -236,126 +225,85 @@ blockquote {
 }
 
 .blog-intro-item > p {
-    font-size: 0.9em;
     line-height: 1.2;
-    letter-spacing: -0.04em;
 }
 
-.blog-title-wrap {
-    max-width: 85%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    display: flex;
-}
 
 .blog-home-wrap {
-    max-width: 85%;
+    max-width: 65%;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+.blog-items-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.blog-title-item {
-    flex: 1;
-    padding: 30px;
-}
-
-.blog-title-item > img {
-    width: 550px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.blog-title-item > h1 {
-    color: F;
-    font-size: 2.5em;
-}
-
 .blog-items {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
     background-color: #303030;
-    border-radius: 20px;
+    border-radius: 1rem;
 }
 
 .blog-items > h1 {
+    font-size: 1.5rem;
     margin-top: 0;
-    font-size: 26px;
     color: lightcoral;
 }
 
+/* Blog content pages */
+
 .blog-items p {
-    font-size: 18px;
-    letter-spacing: -0.05em;
+    font-size: 1rem;
 }
 
 .blog-content-wrap {
     max-width: 60%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .blog-content h1 {
-    font-size: 2.5em;
-    margin: 15px 0px;
+    font-size: 2.5rem;
+    margin: 0.7rem 0px;
 }
 
 .blog-content h2 {
-    font-size: 1.1em;
-    color: lightcoral;
+    font-size: 1.2rem;
     margin-bottom: 40px;
+    color: lightcoral;
     letter-spacing: 0; 
 }
 
 .blog-content h3 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: 600;
-    letter-spacing: 0;
     margin-top: 50px;
+    letter-spacing: 0;
     color: #b3b3b3;
 }
 
 .blog-content p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
     line-height: 2.3;
     font-weight: 400;
-    font-size: 1.4em;
     letter-spacing: 0;
-    font-family: 'Playfair Display', serif;
 }
 
 .blog-content a{
     color: wheat;
 }
 
-.blog-content blockquote {
-    font-size: 18px;
-    font-weight: 100;
-}
-
 .blog-content > img {
     max-width: 100%;
 }
 
-.clinicalBoys {
-    max-height: 80%;
-    max-width: 80%;
-    display: block;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.studyPic {
-    max-height: 90%;
-    max-width: 90%;
-    display: block;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 /* Project */
+
+/* Project Intro Page */
 
 .project-intro-wrap {
     max-width: 85%;
@@ -363,66 +311,46 @@ blockquote {
 }
 
 .project-intro-item > h1 {
-    font-size: 43px;
+    font-size: 2.5rem;
 }
 
 .project-intro-item p {
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: -0.04em;
+    font-size: 1rem;
 }
 
 .project-intro-pic {
     width: 100%;
 }
 
-.project-title-wrap {
-    display: flex;
-    padding: 50px;
-    max-width: 80%;
+.project-home-wrap {
+    max-width: 65%;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
-.project-title-items {
-    flex: 1;
-}
-
-.project-title-items > img {
-    width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.project-title-items > h1 {
-    color:  #b3b3b3;
+.project-items-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .project-items {
-    padding: 20px;
-    margin: 10px;
+    padding: 1rem;
+    margin: 1rem;
     background-color: #303030;
-    border-radius: 20px;
+    border-radius: 1rem;
 }
 
 .project-items > h1 {
+    font-size: 1.5rem;
     margin-top: 0;
-    font-size: 26px;
     color: lightcoral;
 }
 
 .project-items p {
-    font-size: 18px;
-    letter-spacing: -0.05em;
+    font-size: 1rem;
 }
 
-.project-home-wrap {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    max-width: 85%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
+/* Project Content  */
 
 .project-content-wrap {
     max-width: 70%;
@@ -431,7 +359,7 @@ blockquote {
 }
 
 .project-content p {
-    letter-spacing: -0.06em;
+    font-size: 1.3rem;
     line-height: 1.8;
 }
 
@@ -442,19 +370,19 @@ blockquote {
 }
 
 .project-content h2 {
-    font-size: 1.1em;
-    color: lightcoral;
+    font-size: 1.2em;
     margin-bottom: 40px;
+    color: lightcoral;
     letter-spacing: 0;
 }
 
 .project-content h3:first-of-type, .project-content h3:last-of-type{
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
 }
 
 .project-content h3 {
-    font-size: 25px;
+    font-size: 1.3rem;
     margin-top: 50px;
     color: #b3b3b3;
     letter-spacing: 0;
@@ -475,7 +403,8 @@ table {
 }
 
 th, td {
-    padding: 10px;
+    font-size: 1rem;
+    padding: 0.2rem;
     text-align-last: left;
 }
 
@@ -493,27 +422,28 @@ th, td {
 }
 
 .ivanHead {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 50%;
     display: block;
     margin: auto;
     margin-top: 70px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
 }
 
 /*  RESUME  */
 
+/* Resume Intro */
+
 .resume-intro-background {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 2.5rem 0;
 }
 
 .resume-intro-background h1 {
-    font-size: 50px;
+    font-size: 2.5rem;
 }
 
 .resume-intro-background p {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .resume-intro-wrap {
@@ -522,9 +452,9 @@ th, td {
 }
 
 .resume-background {
-    width: 100%;
     margin: 0 auto;
     display: block;
+    width: 100%;
 }
 
 .resume-content-wrap {
@@ -534,15 +464,14 @@ th, td {
 
 .category {
     text-align: left;
-    margin: 0.9em 0 0.4em 0;
+    margin: 0.9rem 0 0.4rem 0;
     color:  #b3b3b3;
-    letter-spacing: -0.07em;
 }
 
 .resume-content-wrap > h2 {
-    font-size: 1.5em;
-    color: lightcoral;
+    font-size: 1.6rem;
     margin: 10px 0 0 0;
+    color: lightcoral;
     letter-spacing: 0;
 }
 
@@ -551,8 +480,8 @@ th, td {
 }
 
 .resume-items p {
+    font-size: 1.5rem;
     margin: 0.2em 0;
-    font-size: 1.5em;
 }
 
 .resume-item-left {
@@ -569,8 +498,8 @@ th, td {
 }
 
 .resume-pos-descript > p {
-    color: #b3b3b3;
     margin: 0;
+    color: #b3b3b3;
 }
 
 .resume-pos-descript > ul {
@@ -583,24 +512,24 @@ th, td {
 .read-more-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5em;
+    grid-gap: 1.5rem;
 }
 
 .read-more-items {
     background-color: #303030;
     border-radius: 20px;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .read-more-items > h1 {
-    color: lightcoral;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin: 10px 0;
+    color: lightcoral;
 }
 
 .read-more-items > p{
+    font-size: 1rem;
     line-height: 1.5;
-    font-size: 1em;
 }
 
 /*FOOTER*/
@@ -615,7 +544,6 @@ footer {
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
-    
 }
 
 .footer-content-items {
@@ -624,23 +552,21 @@ footer {
     align-items: baseline;
 }
 
-
 .copyright-text {
-    color: #F7F3E3;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: 1px;
+    color: #F7F3E3;
 }
 
-
 .footer-info a{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.625rem;
     display: inline-block;
 }
 
 .footer-info h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     padding: 20px;
 }
@@ -650,7 +576,7 @@ footer {
 }
 
 .footer-emoji {
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 /* Media Queries */
@@ -677,24 +603,8 @@ footer {
 @media screen and (max-width: 1300px) {
         /* PROJECT PAGE SO THAT TITLE DESCRIPTIONS WRAP AROUND PICTURE */
 
-        .project-title-wrap {
-            max-width: 85%;
-        }
-        
-        .project-title-items > img {
-            width: 380px;
-        }
-        
-        .project-title-items > h1 {
-            font-size: 1.4em
-        }
-
-        .project-title-items > p {
-            font-size: 1em;
-        }
-        
-        .project-items > h1 {
-            font-size: 1.2em;
+        html {
+            font-size: 14px;
         }
         
         .project-items > p {
@@ -707,50 +617,13 @@ footer {
         
         .project-intro-item p {
             font-size: 0.75em;
-        }
+        } */
 
         .project-content-wrap {
             max-width: 80%;
         }
         
         /* Blog page < 1300 */
-
-        .blog-intro-item > p {
-            font-size: 0.7em;;
-        }
-
-        .blog-title-wrap {
-            max-width: 90%;
-        }
-        
-        .blog-title-item {
-            padding: 20px;
-        }
-        
-        .blog-title-item > img {
-            width: 450px;
-        }
-        
-        .blog-title-item > h1 {
-            font-size: 2em;
-        }
-
-        /* .blog-home-wrap {
-             max-width: 95%;
-        } */
-    
-        .blog-items {
-            padding: 10px
-        }
-        
-        .blog-items > h1 {
-            margin-top: 0;
-            font-size: 1.2em;
-        }
-        
-        .blog-items p {
-            font-size: 1em;
-        }
         
         .btn-links {
             padding: 5px 5px;
@@ -804,10 +677,8 @@ footer {
 
 @media screen and (max-width: 930px) {
 
-    .brand-name {
-        font-size: 1.3em;
-        letter-spacing: 0.15em;
-        margin: 1em;
+    html {
+        font-size: 12px;
     }
 
     .toggle-button {
@@ -835,7 +706,7 @@ footer {
     }
 
     .navbar-links li a {
-        margin: 0.2em 0.5em;
+        margin: 0.2rem 0.5rem;
     }
 
     .navbar-links.active {
@@ -853,26 +724,6 @@ footer {
         max-width: 90%;
     }
 
-    .category {
-        font-size: 1.6em;
-    }
-    
-    .resume-content-wrap > h2 {
-        font-size: 1.05em;
-    }
-    
-    .resume-item-left > p {
-        font-size: 1em;
-    }
-    
-    .resume-item-right > p {
-        font-size: 1em;
-    }
-    
-    .resume-content-wrap li {
-        font-size: 0.9em;
-    }
-
     /* Project for < 930 px */
 
     .project-intro-wrap {
@@ -881,33 +732,9 @@ footer {
         max-width: 95%;
     }
 
-    .project-intro-item > h1 {
-        font-size: 1.5em;
-    }
-    
-    .project-intro-item p {
-        font-size: 0.6em;
-    }
-
-    .project-title-wrap {
-        max-width:100%;
-    }
-    
-    .project-title-items > img {
-        width: 250px;
-    }
-
     .project-home-wrap {
         display: block;
         max-width: 95%;
-    }
-    
-    .project-title-items > h1 {
-        font-size: 1.1em
-    }
-
-    .project-title-items > p {
-        font-size: 0.8em;
     }
 
     .project-items > h1 {
@@ -916,69 +743,25 @@ footer {
     
     .project-items > p {
         font-size: 0.8em;
-    }
+    } */
 
     .btn-links {
+        font-size: 1rem;
         padding: 5px 5px;
-        font-size: 0.8em;
     }
 
     .project-content-wrap {
         max-width: 85%;
     }
-    
-    .project-content li {
-        font-size: 0.8em;
-    }
-
-    .project-content p {
-        font-size: 1em;
-    }
-    
-    .project-content h1{
-        font-size: 2em;
-    }
-    
-    .project-content h2 {
-        font-size: 1em;
-    }
-
-    .project-content h3 {
-        font-size: 1.2em
-    }
 
     .project-content h3:first-of-type, .project-content h3:last-of-type{
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     /* Blog pages < 930 px */
 
     .blog-intro-wrap {
         max-width: 95%;
-    }
-
-    .blog-intro-item > p {
-        font-size: 0.6em;;
-    }
-
-    .blog-title-wrap {
-        max-width: 95%;
-    }
-    
-    .blog-title-item {
-        padding: 10px;
-    }
-    
-    .blog-title-item > img {
-        width: 350px;
-    }
-    
-    .blog-title-item > h1 {
-        font-size: 1.7em;
-    }
-
-    .blog-title-item > p {
-        font-size: 1em;
     }
 
     .blog-home-wrap {
@@ -988,38 +771,13 @@ footer {
     .blog-items {
         padding: 10px
     }
-    
-    .blog-items > h1 {
-        margin-top: 0;
-        font-size: 1.1em;
-    }
-    
-    .blog-items p {
-        font-size: 0.9em;
-    }
 
     /* Blog posts < 930 px */
 
     .blog-content-wrap {
         max-width: 80%;
     }
-    
-    .blog-content h1 {
-        font-size: 2em;
-    }
-    
-    .blog-content h2 {
-        font-size: 1em;
-    }
-    
-    .blog-content h3 {
-        font-size: 1.5em;
-    }
-    
-    .blog-content p {
-        font-size: 1.2em;
-    }
-    
+
     /* Footer */
 
     .footer-content-item > h1 {
@@ -1027,16 +785,9 @@ footer {
     }
 
     /* Read More */
+
     .read-more-wrap {
         display: block;
-    }
-    
-    .read-more-items {
-        padding: 1em;
-    }
-    
-    .read-more-items > h1 {
-        font-size: 1.5em;
     }
 }
 
@@ -1044,34 +795,38 @@ footer {
 
 @media screen and (max-width: 650px) {
     
+    html {
+        font-size: 12px;
+    }
+
     .brand-name {
-        font-size: 0.8em;
-        letter-spacing: 0.15em;
-        margin:1.5em 1em;
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+        margin:1.5rem 1rem;
     }
 
     .toggle-button {
-        margin: 12px 0;
+        margin: 1rem 0;
     }
     
     .toggle-button .bar {
-        height: 3px;
+        height: 2px;
         width: 100%;
         background-color: #F7F3E3;
         border-radius: 10px;
     }
     
     .home-body > p {
-        font-size: 0.8em;
+        font-size: 1rem;
         margin: 50px;
     }
 
     .home-intro-content h1 {
-        font-size: 3em;
+        font-size: 3rem;
     }
     
     .home-intro-content p {
-        font-size: 1em;
+        font-size: 1rem;
     }
     
     .home-content-wrap {
@@ -1080,16 +835,16 @@ footer {
     }
 
     .home-content-item {
-        padding: 20px;
-        margin: 20px 0;
+        padding: 12px;
+        margin: 10px 0;
     }
     
     .home-content-item > p {
-        font-size: 0.7em;
+        font-size: 1rem;
     }
     
     .home-content-item > h1 {
-        font-size: 1em;
+        font-size: 1.1rem;
     }
 
     .btn-links {
@@ -1103,16 +858,16 @@ footer {
     }
     
     .home-text-item {
-        padding: 20px;
-        margin: 10px;
+        padding: 12px;
+        margin: 5px;
     }
 
     .home-text-item p {
-        font-size: 0.7em;
+        font-size: 1;
     }
 
     .home-text-item h1 {
-        font-size: 1em
+        font-size: 1.1rem
     }
 
     /* Footer mobile section */
@@ -1123,14 +878,14 @@ footer {
     }
 
     .footer-content-item h1{
-        font-size: 0.8em;
+        font-size: 0.8rem;
         padding: 5px 20px;
     }
 
     .footer-info a{
+        display: inline-block;
         padding: 2px;
         margin: 0;
-        display: inline-block;
     }
 
     .connect img {
@@ -1146,11 +901,11 @@ footer {
     /* RESUME MOBILE  */
 
     .resume-intro-background h1 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
     
     .resume-intro-background p {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
     
     .resume-intro-wrap {
@@ -1167,7 +922,7 @@ footer {
     }
     
     .resume-items p {
-        font-size: 0.8em;
+        font-size: 1rem;
     }
     
     .resume-item-left {
@@ -1179,27 +934,31 @@ footer {
     }
 
     .resume-pos-descript > p{
-        font-size: 0.75em;
-        padding-left: 1em;
+        font-size: 1rem;
+        padding-left: 1rem;
     }
 
     .resume-content-wrap {
         max-width: 95%;
     }
 
+    .resume-content-wrap > h2 {
+        font-size: 1rem;
+    }
+
     .resume-content-wrap ul {
-        margin: 0.5em;
-        padding-left: 0.3em;
+        margin: 0.5rem;
+        padding-left: 0.3rem;
     }
 
     .resume-content-wrap li {
-        font-size: 0.75em;
+        font-size: 0.75rem;
     }
 
     .category {
-        font-size: 1.2em;
+        font-size: 1.4rem;
         margin-bottom: 0 ;
-        margin-top: 0.8em;
+        margin-top: 0.8rem;
     }
 
     /* Project section MOBILE */
@@ -1210,35 +969,21 @@ footer {
         max-width: 95%;
     }
 
+    .project-items-wrap {
+        display: block;
+    }
+    
+
     .project-intro-item > h1 {
         font-size: 1.5em;
     }
     
     .project-intro-item p {
-        font-size: 0.45em;
-    }
-
-
-    .project-title-wrap {
-        display: block;
-        max-width: 95%;
-        padding: 0;
-    }
-    
-    .project-title-items > img {
-        width: 250px;
-    }
-    
-    .project-title-items > h1 {
-        font-size: 1.1em
-    }
-
-    .project-title-items > p {
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
 
     .project-items {
-        margin: 1em 0em;
+        margin: 1rem 0em;
         max-width: 95%;
     }
 
@@ -1296,48 +1041,22 @@ footer {
     }
 
     .blog-intro-item > p {
-        font-size: 0.5em;;
+        font-size: 0.5rem;;
     }
 
-    .blog-title-wrap {
-        max-width: 95%;
+    .blog-items-wrap {
         display: block;
     }
-    
-    .blog-title-item {
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .blog-title-item > img {
-        width: 300px;
-    }
-    
-    .blog-title-item > h1 {
-        font-size: 1.5em;
-    }
 
-    .blog-title-item > p {
-        font-size: 0.9em;
-    }
 
     .blog-home-wrap {
-        max-width: 100%;
-        margin: 0;
+        max-width: 95%;
+        margin: 0 auto;
         display: block;
     }
 
     .blog-items {
         padding: 10px
-    }
-    
-    .blog-items > h1 {
-        margin-top: 0;
-        font-size: 1em;
-    }
-    
-    .blog-items p {
-        font-size: 0.7em;
     }
 
     .blog-content-wrap {
@@ -1348,17 +1067,9 @@ footer {
         font-size: 1.8em;
     }
     
-    .blog-content h2 {
-        font-size: 0.8em;
-    }
-    
     .blog-content h3 {
-        font-size: 1.1em;
-        margin-top: 1.8em
-    }
-    
-    .blog-content p {
-        font-size: 1em;
+        /* font-size: 1.1em; */
+        margin-top: 1.8rem
     }
 
     /* Music page < 650 px */
@@ -1383,23 +1094,11 @@ footer {
     }
     
     .read-more-items {
-        padding: 0.8em;
+        padding: 0.8rem;
     }
     
     .read-more-items > h1 {
-        font-size: 1em;
-    }
-
-    .read-more-items > p {
-        font-size: 0.8em;
-    }
-
-}
-
-@media screen and (max-width: 325px) {
-
-    .blog-title-item > img {
-        width: 260px;
+        font-size: 1.2rem;
     }
 
 }
