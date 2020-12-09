@@ -45,12 +45,31 @@ a {
     color: #F7F3E3;;
 }
 
-.divider {
-    text-align: center;
-    padding: 20px;
+.underline {
+    display: inline-block;
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    width: 100%; 
+    transform: scaleX(0);
+    height: 2px; 
+    bottom: 0; 
+    left: 0; 
+    background-color: lightcoral;
+    transform-origin: bottom right; 
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover::before {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
 }
 
 .btn-links {
+    margin: 5px 0;
     padding: 8px 8px;
     background-color: #202020;
     border: none;
@@ -120,9 +139,13 @@ a {
 .home-intro-background {
     background-color: #202020;
     padding-top: 0px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     position: relative;
 }
+
+/* .home-body {
+    max-width: 100%;
+} */
 
 .photo-credit {
     color: white; 
@@ -151,7 +174,7 @@ a {
 
 .home-body > p {
     font-size: 1.5rem;
-    margin: 3.13rem;
+    margin: 5rem 3.13rem 3.13rem 3.13rem;
     text-align: center;
     letter-spacing: 1.2em;
     font-weight: 800;
@@ -159,9 +182,9 @@ a {
 
 .home-content-wrap{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    max-width: 85%;
+    max-width: 95%;
     margin: auto;
     margin-bottom: 1.25rem;
     border-radius: 1.25rem;
@@ -169,8 +192,8 @@ a {
 
 .home-text-wrap{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 86%;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 95%;
     margin: auto;
 }
 
@@ -188,7 +211,7 @@ a {
     border-radius: 20px;
 }
 
-.home-content-item > h1 {
+.home-content-item h1 {
     font-size: 1.5rem;
     margin-top: 0;
     color: lightcoral;
@@ -211,6 +234,56 @@ a {
     text-overflow: ellipsis;
 }
 
+
+/* SEARCH BAR */
+
+.search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 2.1rem;
+    width: 20rem;
+    border-radius: 2.1rem;
+    padding: 10px;
+    background: #3b3b3b;
+}
+
+.search-btn {
+    margin: 0;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.search-btn > i {
+    font-size: 1rem;
+}
+
+.search-text {
+    font-family: 'Montserrat', sans-serif ;  
+    font-size: 1.3rem;
+    padding: 0.6px;
+    float: left;
+    border: none; 
+    background: none;
+    outline: none; 
+    color: white;
+    transition: 0.1s;
+    line-height: 2rem; 
+}
+
+.search-bar:hover > .search-btn {
+    background-color: lightcoral;
+}
+
 /* BLOG */
 
 /* Blog title page  */
@@ -230,7 +303,7 @@ a {
 
 
 .blog-home-wrap {
-    max-width: 65%;
+    max-width: 70%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -247,7 +320,7 @@ a {
     border-radius: 1rem;
 }
 
-.blog-items > h1 {
+.blog-items h1 {
     font-size: 1.5rem;
     margin-top: 0;
     color: lightcoral;
@@ -323,7 +396,7 @@ a {
 }
 
 .project-home-wrap {
-    max-width: 65%;
+    max-width: 70%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -340,7 +413,7 @@ a {
     border-radius: 1rem;
 }
 
-.project-items > h1 {
+.project-items h1 {
     font-size: 1.5rem;
     margin-top: 0;
     color: lightcoral;
@@ -408,17 +481,42 @@ th, td {
     text-align-last: left;
 }
 
-/* MUSIC */
+/* about */
 
-.music-intro-wrap { 
-    max-width: 90%;
+.about-content-wrap { 
+    max-width: 70%;
     margin: 0 auto;
-    
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.2rem;
 }
 
-.music-intro-pic {
+.about-content-pic {
     display: block;
     max-width: 100%;
+}
+
+.about-content-item > h2:first-of-type {
+    color: darkgrey;
+    font-weight: 100;
+}
+
+.about-content-item {
+    margin-top: 2rem;
+}
+
+.about-side-item {
+    background-color: #303030;
+    margin: 0 0 1rem 0;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+}
+
+.about-side-item h1 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.03rem;
+    color: lightcoral;
 }
 
 .ivanHead {
@@ -433,10 +531,6 @@ th, td {
 /*  RESUME  */
 
 /* Resume Intro */
-
-.resume-intro-background {
-    padding: 2.5rem 0;
-}
 
 .resume-intro-background h1 {
     font-size: 2.5rem;
@@ -464,7 +558,7 @@ th, td {
 
 .category {
     text-align: left;
-    margin: 0.9rem 0 0.4rem 0;
+    margin: 3rem 0 1.5rem 0;
     color:  #b3b3b3;
 }
 
@@ -633,7 +727,7 @@ footer {
         /* Resume for 930 < px < 1300 */
 
         .category {
-            font-size: 1.9em;
+            font-size: 1.9rem;
         }
 
         .resume-content-wrap {
@@ -713,6 +807,13 @@ footer {
         display: flex;
     }
 
+
+    /* About page for mobile and iPad < 930 px */
+
+    .about-content-wrap {
+        max-width: 95%;
+    }
+
     /* Resume for mobile and iPad */
 
     .resume-intro-wrap {
@@ -743,7 +844,7 @@ footer {
     
     .project-items > p {
         font-size: 0.8em;
-    } */
+    } 
 
     .btn-links {
         font-size: 1rem;
@@ -870,6 +971,18 @@ footer {
         font-size: 1.1rem
     }
 
+    /* About < 650 px */
+
+    .about-content-wrap {
+        display: block;
+    }
+
+    .mobile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
     /* Footer mobile section */
 
     .copyright-text {
@@ -992,7 +1105,7 @@ footer {
     }
 
     .project-items > p {
-        font-size: 0.75em;
+        font-size: 0.9em;
     }
     
     .project-content-wrap {
@@ -1027,6 +1140,12 @@ footer {
 
     .project-content h3:first-of-type, .project-content h3:last-of-type{
         font-size: 1.1em;
+    }
+
+    th, td {
+        font-size: 0.8rem;
+        padding: 0.1rem;
+        text-align-last: left;
     }
 
     /* blog for mobile devices  */
@@ -1099,6 +1218,16 @@ footer {
     
     .read-more-items > h1 {
         font-size: 1.2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+    /* to make sure that for even smaller devices like iPhone 5S that the featured posts section would be converted to block for easily readibility. */
+    .mobile-grid {
+        display: block; 
     }
 
 }
