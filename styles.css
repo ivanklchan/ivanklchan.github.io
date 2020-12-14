@@ -15,6 +15,7 @@ COLOURS
 lightcoral
 
 /* GLOBAL */
+
 html{ 
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -23,19 +24,13 @@ html{
     background-color: #202020;
 }
 
-.intro-content-wrap {
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 90%;
-}
-
 p {
     font-weight: 100;
     line-height: 1.5;
 }
 
 li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 100;
     line-height: 1.6;
 }
@@ -55,12 +50,12 @@ a {
     position: absolute;
     width: 100%; 
     transform: scaleX(0);
-    height: 2px; 
+    height: 1.5px; 
     bottom: 0; 
     left: 0; 
     background-color: lightcoral;
     transform-origin: bottom right; 
-    transition: transform 0.25s ease-out;
+    transition: transform 0.2s ease-out;
 }
 
 .underline:hover::before {
@@ -134,21 +129,19 @@ a {
     width: 1.875rem;
 }
 
-/* HOME */
-
-.home-intro-background {
-    background-color: #202020;
-    padding-top: 0px;
-    padding-bottom: 60px;
-    position: relative;
+.content-wrap { 
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.2rem;
 }
 
-/* .home-body {
-    max-width: 100%;
-} */
+/* HOME */
 
 .photo-credit {
-    color: white; 
+    margin: 1rem 0 3.5rem 0;
+    color: F7F3E3; 
     text-align: center;
 }
 
@@ -165,56 +158,37 @@ a {
 .home-intro-content p {
     font-size: 2rem;
     margin: 3px;
-    color: #F7F3E3;
     letter-spacing: 1;
 }
 
-
-/* The PROJECT and BLOG HIGHLIGHTS words */
-
-.home-body > p {
-    font-size: 1.5rem;
-    margin: 5rem 3.13rem 3.13rem 3.13rem;
+.highlight-font {
+    margin: 0rem 3.13rem 3.13rem 3.13rem;
+    font-size: 1rem;
     text-align: center;
-    letter-spacing: 1.2em;
+    letter-spacing: 1rem;
     font-weight: 800;
 }   
 
-.home-content-wrap{
+.content-highlight {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 1rem;
-    max-width: 95%;
-    margin: auto;
-    margin-bottom: 1.25rem;
-    border-radius: 1.25rem;
 }
 
-.home-text-wrap{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 95%;
-    margin: auto;
-}
-
-.home-text-item {
-    background-color: #303030;
-    padding: 1.25rem;
-    margin: 0.625rem;
-    grid-gap: 1rem;
-    border-radius: 1.25rem;
-}
-
-.home-content-item {
+.content-highlight-item {
     background-color: #063268;;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-.home-content-item h1 {
-    font-size: 1.5rem;
+.content-highlight-item h1 {
+    font-size: 1.3rem;
     margin-top: 0;
     color: lightcoral;
+}
+
+.content-highlight-item p {
+    font-size: 0.85rem;
 }
 
 .cover-image {
@@ -222,23 +196,57 @@ a {
     object-fit: cover;
 }
 
-.home-text-item h1 {
-    font-size: 1.5rem;
-    margin: 0 0 1rem 0;
-    letter-spacing: -0.03rem;
-    color: lightcoral;
+.home-side-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
 }
 
-.home-text-item p {
-    overflow: hidden;
-    text-overflow: ellipsis;
+.home-side-content-item {
+    padding: 1rem;
 }
 
+.home-side-content-item li{
+    font-size: 1rem;
+}
+
+.home-side-content-item ul {
+    padding-left: 1rem;
+}
+
+.home-side-content-item p {
+    margin: 0;
+    font-weight: 800;
+}
+
+.contact-info, .home-side-content-item {
+    background-color: #303030;
+    border-radius: 1rem;
+}
+
+.contact-info ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.contact-info li {
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 1.5rem; 
+}
+
+.mini-about-me {
+    display: block;
+}
 
 /* SEARCH BAR */
 
 .search-bar {
-    position: absolute;
+    margin: 0 0 4rem 0;
+    position: relative;
     left: 50%;
     transform: translate(-50%,-50%);
     height: 2.1rem;
@@ -483,14 +491,6 @@ th, td {
 
 /* about */
 
-.about-content-wrap { 
-    max-width: 70%;
-    margin: 0 auto;
-    display: grid; 
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 1.2rem;
-}
-
 .about-content-pic {
     display: block;
     max-width: 100%;
@@ -503,6 +503,10 @@ th, td {
 
 .about-content-item {
     margin-top: 2rem;
+}
+
+.about-content-item li{
+    font-size: 1.2rem;
 }
 
 .about-side-item {
@@ -810,7 +814,7 @@ footer {
 
     /* About page for mobile and iPad < 930 px */
 
-    .about-content-wrap {
+    .content-wrap {
         max-width: 95%;
     }
 
@@ -917,7 +921,7 @@ footer {
         border-radius: 10px;
     }
     
-    .home-body > p {
+    .highlight-font {
         font-size: 1rem;
         margin: 50px;
     }
@@ -929,23 +933,36 @@ footer {
     .home-intro-content p {
         font-size: 1rem;
     }
-    
-    .home-content-wrap {
-        display: block;
-        max-width: 92%;
-    }
 
-    .home-content-item {
+    .content-highlight-item {
         padding: 12px;
         margin: 10px 0;
     }
     
-    .home-content-item > p {
+    .content-highlight-item > p {
         font-size: 1rem;
     }
     
-    .home-content-item > h1 {
+    .content-highlight-item > h1 {
         font-size: 1.1rem;
+    }
+
+    .mini-about-me {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .mini-about-me {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .home-side-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
     }
 
     .btn-links {
@@ -953,27 +970,9 @@ footer {
         font-size: 0.8em;
     }
 
-    .home-text-wrap{
-        max-width: 95%;
-        display: block;
-    }
-    
-    .home-text-item {
-        padding: 12px;
-        margin: 5px;
-    }
-
-    .home-text-item p {
-        font-size: 1;
-    }
-
-    .home-text-item h1 {
-        font-size: 1.1rem
-    }
-
     /* About < 650 px */
 
-    .about-content-wrap {
+    .content-wrap {
         display: block;
     }
 
@@ -1009,7 +1008,6 @@ footer {
     .footer-content-wrap {
         max-width: 100%;
     }
-
 
     /* RESUME MOBILE  */
 
@@ -1187,7 +1185,6 @@ footer {
     }
     
     .blog-content h3 {
-        /* font-size: 1.1em; */
         margin-top: 1.8rem
     }
 
@@ -1223,11 +1220,10 @@ footer {
 }
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
 
     /* to make sure that for even smaller devices like iPhone 5S that the featured posts section would be converted to block for easily readibility. */
     .mobile-grid {
         display: block; 
     }
-
 }

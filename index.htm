@@ -1,5 +1,6 @@
 <!DOCTYPE html> 
 <html lang="en-us">
+
 <!--General Information--> 
     
 <head>
@@ -43,101 +44,141 @@
     
 <!--  HOME PAGE INTRODUCTION -->
 
-<main>
-    <div class="home-intro-background">  
-        <div class="intro-content-wrap">
-            <div class="home-intro-content">
-                <h1>Hello!</h1>
-                <p>I'm Ivan, an <b class="underline">x-ray technologist student</b>☢️,</p> 
-                <p>aspiring musician &#127928;, and a blogger 🖊️.</p>
-            </div>
-                <img class="ivanHead" src="images/ivanHead.jpg" alt="logo">
+<main class="content-wrap">
+
+    <!-- Left side of main content 2fr -->
+    <div class="home-content-item">
+
+        <!-- Introduction Sentence "Hello" -->
+        <div class="home-intro-content">
+            <h1>Hello!</h1>
+            <p>I'm Ivan, a <b class="underline">student x-ray technologist</b>☢️,</p> 
+            <p>aspiring musician &#127928;, and a blogger 🖊️.</p>
+            <img class="ivanHead" src="images/ivanHead.jpg" alt="logo">
+
+
         </div>
-            <p class="photo-credit">📷  <a class="underline" href="https://www.instagram.com/kylesvisuals/" target="_blank">@kylesvisuals</a></p>
-    </div>
 
-<!-- SEARCH BAR -->
+        <p class="photo-credit">📷  <a class="underline" href="https://www.instagram.com/kylesvisuals/" target="_blank">@kylesvisuals</a></p>
 
-    <div class="search-bar">
-        <input class="search-text" type="text" name="" placeholder="Type something :)">
-        <a class="search-btn" href="#">
-            <i class="fas fa-search"></i>
-        </a>
-    </div>
+        <!-- Search Bar for Aesthetics and later function  with JS-->
+        <!-- Fix later to position to the centre of Left side of main content 2fr -->
+        <div class="search-bar">
+            <input class="search-text" type="text" name="" placeholder="Type something :)">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
 
-<!--  HOME CONTENT  -->
-    
-    <div class="home-body">
+        <!-- Content Highlight with blogs, books, and prodjects -->
 
-        <p>&nbspBLOG &nbspHIGHLIGHTS</p>
-
-        <div class="home-text-wrap">
-
-            <div class="home-text-item">
-                <a href="#"><h1>My Four Months Off School</h1></a>
-                <p>Ivan Chan | Toronto, ON</p>
-                <!-- <img class="cover-image" src="#"> -->
-                    <p>Coming soon [...]</p>
-                
-            </div>
-
-            <div class="home-text-item">
+        <p class="highlight-font">CONTENT HIGHLIGHTS</p>
+        <div class="content-highlight mobile-grid">
+            <!-- Item 1 -->
+            <div class="content-highlight-item">
                 <a href="contents/blog-posts/the-millionaire-next-door.htm"><h1>Book Review: The Millionaire Next Door</h1></a>
                 <p>Ivan Chan Oct 14 2020. | Hamilton, ON | 5 min</p>
                 <img class="cover-image" src="images/million-next-door-cover.jpg">
                     <p>We live in a consumer culture. Everyday we are bombarded constantly by advertisements [...]</p>
-                
             </div>
 
-            <div class="home-text-item">
+            <!-- Item 2 -->
+            <div class="content-highlight-item">
                 <a href="contents/blog-posts/atomic-habits.html"><h1>Book Review: Atomic Habits</h1></a>
                 <p>Ivan Chan Oct 17 2020. | Hamilton, ON | 5 min</p>
                 <img class="cover-image" src="images/atomic-habits-cover.jfif">
-                    <p>These are the words from the book cover of <i>Atomic Habits</i> by James Clear. It’s funny how I [...]</p> 
-            </div>                
+                    <p>These are the words from the book cover of <i>Atomic Habits</i> by James Clear. It’s [...]</p> 
+            </div>
 
-            <div class="home-text-item">
+            <!-- Item 3 -->
+            <div class="content-highlight-item">
                 <a href="contents/blog-posts/2ndYear.htm"><h1>Second Year Reflection</h1></a>
                 <p>Ivan Chan Oct 24 2020. | Toronto, ON | 5 min</p>
                 <img class="cover-image" src="images/2nd-year-cover.jpg">
-                    <p>I’ve always thought of my first year as a “honeymoon” or en français “la lune de miel” [...]</p>
-            </div>       
+                    <p>I’ve always thought of my first year as a “honeymoon” or en français “la lune de miel” [...]
+            </div>
 
-            <div class="home-text-item">
+            <!-- Item 4 -->
+            <div class="content-highlight-item">
                 <a href="contents/blog-posts/finances.htm"><h1>Managing Finances in University</h1></a>
                 <p>Ivan Chan Nov 10 2020. | Toronto, ON | 7 min</p>
                 <img class="cover-image" src="images/finances-cover.jpg">
                     <p>As someone who is adequately knowledgeable in personal finances, the most common question [...]</p>
-                
-            </div>
-
-            <div class="home-text-item">
-                <a href="#"><h1>How I Learned to Code</h1></a>
-                <p>Ivan Chan | Toronto, ON</p>
-                <!-- <img class="cover-image" src="#"> -->
-                <p>Coming soon [...]</p>
             </div>
         </div>
 
-        <p>&nbspPROJECT &nbspHIGHLIGHTS</p>
+    </div>
 
-        <div class="home-content-wrap">
+    <!-- Right side of main content 1fr -->
+    <div class="home-content-item">
 
-            <div class="home-content-item">
-                <a href="contents/project-posts/endocarditis.htm"><h1>Infective Endocarditis</h1></a>
-                <p>Ivan Chan July 23 2019. Last updated Dec 23 2020.</p>
-                <br>
-                <img class="cover-image" src="images/echoEndo.jpg">
-                    <p>Infective endocarditis is defined as the formation of nodules or vegetations on heart valves by deposits [...]</p>
+        <!-- Side content like COVID-19, vaccine, mental health resources etc. -->
+        <h2 class="underline">❤️ COVID-19 Resources</h2>
+        <div class="home-side-content mobile-grid">
+            <div class="home-side-content-item"> 
+                <p>😷 Symptoms</p> <!-- COVID-19 Information Section -->
+                <ul> 
+                    <li><a class="underline" href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html" target="_blank">Health Canada <i class="fab fa-canadian-maple-leaf"></i></a></li>
+                    <li><a class="underline" href="https://www.who.int/health-topics/coronavirus#tab=tab_3" target="_blank">World Health Organization 🌎</a></li>
+                </ul>
+                <p>💉 Vaccine</p> <!-- COVID-19 Information Section -->
+                <ul>
+                    <li><a class="underline" href="https://www.canada.ca/en/health-canada/services/drugs-health-products/covid19-industry/drugs-vaccines-treatments/vaccines.html" target="_blank">Government of Canada <i class="fab fa-canadian-maple-leaf"></i></a></li>
+                    <li><a class="underline" href="https://healthycanadians.gc.ca/recall-alert-rappel-avis/hc-sc/2020/74543a-eng.php" target="_blank">Are vaccines safe? 🤔</a></li>
+                </ul>
+                <p>⚠️ Precautions</p> <!-- COVID-19 Information Section -->
+                <ul>
+                    <li><a class="underline" href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html" target="_blank">COVID-19 Prevention & Risks <i class="fab fa-canadian-maple-leaf"></i></a></li>
+                    <li><a class="underline" href="#" target="_blank">Centers for Disease Control 🏢</a></li>
+                </ul>
+                <p>🧘 Mental Health</p> <!-- COVID-19 Information Section -->
+                <ul>
+                    <li><a class="underline" href="https://cmha.ca/news/covid-19-and-mental-health" target="_blank">Canadian Mental Health Association <i class="fab fa-canadian-maple-leaf"></i></a></li>
+                    <li><a class="underline" href="https://www.who.int/teams/mental-health-and-substance-use/covid-19" target="_blank">World Health Organization 🌎</a></li>
+                </ul>
+            </div>
+            <div class="content-highlight-item"> <!-- COVID-19 Information Section -->
+                <h1>COVID-19 in Radiology: Image Findings & Patient Care</h1>
+                <p>Ivan Chan | Dec 25 2020 | Coming soon...</p>
+
+                <img class="cover-image" src="images/covid-19-cover-image.jpeg">
+                <p>Case courtesy of Dr Fabio Macori, <a href="http://radiopaedia.org/" target="_blank">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/covid-19-28?lang=us" target="_blank">COVID-19.</a>
+            </div>
+        </div>
+
+        <!-- Mini about me section -->
+        <div class="mini-about-me mobile-grid">
+            <!-- About me -->
+            <div class="mini-about-me-item">
+                <h2>💁‍♂️ About Me </h2>
+                <p>As of December 2020, I am a <b>student radiologic technologist</b> at <b>McMaster University</b> in Canada. I am currently taking a four-month break off from school.</p>
             </div>
 
-            <div class="home-content-item">
-                <a href="contents/project-posts/physics-lab1.htm"><h1>Impact of collimation, patient size and photocell selection on AEC function</h1></a>
-                <p>Ivan Chan & two other authors; Oct 9, 2019 | McMaster University | Hamilton, ON</p>
-                <img class="cover-image" src="images/sieSmallFFS.png">
-                    <p>Radiographic machines utilize large and small FSS to optimize spatial resolution and heat dissipation ...]</p>
+            <!-- Books I've read -->
+            <div class="mini-about-me-item">
+                <h2>📘 Books I've Read</h2>
+                <p>Atomic Habits, Rich Dad Poor Dad, The Milionaire Next Door, Set for Life, The 12 Rules of Life.</p>
             </div>
 
+            <!-- Music I love -->
+            <div class="mini-about-me-item">
+                <h2>🎵 Music I Love</h2>
+                <p>Shawn Mendes, The Reklaws, Hillsong, Shane & Shane, Ed Sheeran, Post Malone (for the chill vibez).</p>
+            </div>
+            
+        </div>
+
+
+        <!-- Contact information with fontawesome icons. Look at Ali's website as a template - huge icons and huge margins / paddings.  -->
+        <h2>Keep in Contact!</h2>
+        <div class="contact-info">
+            <ul> 
+                <li><a href="https://www.messenger.com/" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
+                <li><a href="https://www.facebook.com/dontcallmeevan" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/i.vanchan/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ivan-chan-063b43144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto: chank52@mcmaster.ca" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            </ul>
         </div>
     </div>
 </main>
@@ -150,7 +191,7 @@
             <div class="footer-content-items">
                 <div class="footer-content-item footer-logo">
                     <h1>&lt;/ivanChan&gt;</h1>
-                    <p class = "copyright-text"> IVAN CHAN &copy; 2019-2020</p>
+                    <p class = "copyright-text"> IVAN CHAN &copy; 2019-2021</p>
                     <p class ="copyright-text">Coded by myself, hosted by Github</p>
                 </div>
                 <div class="footer-content-item connect">
