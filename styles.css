@@ -534,76 +534,58 @@ th, td {
 
 /*  RESUME  */
 
-/* Resume Intro */
+/* new stuff */
 
-.resume-intro-background h1 {
-    font-size: 2.5rem;
+    /* Resume section styles*/
+
+.resume-content-item h1 {
+    margin-bottom: 0;
+    color:lightcoral;
+    text-transform: uppercase;
+    font-size: 1.3rem;
 }
 
-.resume-intro-background p {
-    font-size: 1.2rem;
+.resume-main-content h2 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    letter-spacing: 0rem;
+    color: #b3b3b3
 }
 
-.resume-intro-wrap {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.resume-background {
-    margin: 0 auto;
-    display: block;
-    width: 100%;
-}
-
-.resume-content-wrap {
-    max-width: 75%;
-    margin: 0 auto;
-}
-
-.category {
-    text-align: left;
-    margin: 3rem 0 1.5rem 0;
-    color:  #b3b3b3;
-}
-
-.resume-content-wrap > h2 {
-    font-size: 1.6rem;
-    margin: 10px 0 0 0;
-    color: lightcoral;
+.resume-main-content h3 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 100;
     letter-spacing: 0;
 }
 
-.resume-items {
-    display: flex;
-}
+    /* name and summary section */
 
-.resume-items p {
-    font-size: 1.5rem;
-    margin: 0.2em 0;
-}
-
-.resume-item-left {
-    flex: 2;
-}
-
-.resume-item-left > p {
-    color: #b3b3b3;
-}
-
-.resume-item-right > p {
-    text-align: right;
-    letter-spacing: 0.01em;
-}
-
-.resume-pos-descript > p {
+.resume-title-item > h1 {
+    font-size: 2.5rem;
+    color: lightcoral;
     margin: 0;
-    color: #b3b3b3;
 }
 
-.resume-pos-descript > ul {
-    margin: 10px 0;
+.resume-title {
+    font-style: italic;
+    letter-spacing: 0.1rem;
 }
 
+.resume-title-container {
+    display: grid; 
+    grid-template-columns: 3fr 1fr;
+}
+
+.resume-title-pic {
+    float: right;
+    margin-right: 2rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+-----------------------------
 
 /* Read More Section */
 
@@ -679,25 +661,6 @@ footer {
 
 /* Media Queries */
 
-/* Responsive to make resume intro to wrap below the intro-picture */
-@media screen and (min-width: 1300px) {
-    .resume-intro-wrap {
-        max-width: 95%;
-        display: flex;
-        justify-content: baseline;
-    }
-    .resume-intro-right {
-        padding: 20px;
-        letter-spacing: -0.05em;
-        flex: 1;
-    }
-    .resume-intro-left {
-        padding: 20px;
-        flex: 1;
-    } 
-}
-
-
 @media screen and (max-width: 1300px) {
         /* PROJECT PAGE SO THAT TITLE DESCRIPTIONS WRAP AROUND PICTURE */
 
@@ -726,32 +689,6 @@ footer {
         .btn-links {
             padding: 5px 5px;
             font-size: 0.8em;
-        }
-
-        /* Resume for 930 < px < 1300 */
-
-        .category {
-            font-size: 1.9rem;
-        }
-
-        .resume-content-wrap {
-            max-width: 80%;
-        }
-        
-        .resume-content-wrap > h2 {
-            font-size: 1.25em;
-        }
-        
-        .resume-item-left > p {
-            font-size: 1.1em;
-        }
-        
-        .resume-item-right > p {
-            font-size: 1.1em;
-        }
-        
-        .resume-content-wrap li {
-            font-size: 1em;
         }
 
         /* Blog posts to fit to < 1300 px */
@@ -816,17 +753,6 @@ footer {
 
     .content-wrap {
         max-width: 95%;
-    }
-
-    /* Resume for mobile and iPad */
-
-    .resume-intro-wrap {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .resume-content-wrap {
-        max-width: 90%;
     }
 
     /* Project for < 930 px */
@@ -1009,69 +935,6 @@ footer {
         max-width: 100%;
     }
 
-    /* RESUME MOBILE  */
-
-    .resume-intro-background h1 {
-        font-size: 1.5rem;
-    }
-    
-    .resume-intro-background p {
-        font-size: 0.8rem;
-    }
-    
-    .resume-intro-wrap {
-        max-width: 95%;
-        margin: 0 auto;
-    }
-    
-    .resume-background {
-        width: 100%;
-    }
-
-    .resume-items {
-        display: flex;
-    }
-    
-    .resume-items p {
-        font-size: 1rem;
-    }
-    
-    .resume-item-left {
-        flex: 2;
-    }
-
-    .resume-item-right {
-        flex: 1;
-    }
-
-    .resume-pos-descript > p{
-        font-size: 1rem;
-        padding-left: 1rem;
-    }
-
-    .resume-content-wrap {
-        max-width: 95%;
-    }
-
-    .resume-content-wrap > h2 {
-        font-size: 1rem;
-    }
-
-    .resume-content-wrap ul {
-        margin: 0.5rem;
-        padding-left: 0.3rem;
-    }
-
-    .resume-content-wrap li {
-        font-size: 0.75rem;
-    }
-
-    .category {
-        font-size: 1.4rem;
-        margin-bottom: 0 ;
-        margin-top: 0.8rem;
-    }
-
     /* Project section MOBILE */
 
     .project-intro-wrap {
@@ -1223,6 +1086,11 @@ footer {
 @media screen and (max-width: 380px) {
 
     /* to make sure that for even smaller devices like iPhone 5S that the featured posts section would be converted to block for easily readibility. */
+
+    html {
+        font-size: 10px;
+    }
+
     .mobile-grid {
         display: block; 
     }
