@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang="en-us">
+<!--General Information--> 
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ivan Chan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="image" property="og:image" content="https://itsmeivan.com/images/Github-social-media-preview.png">
+    <title>How I Learned to Code</title>
+    <link rel="stylesheet" href="/ivanklchan.github.io/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="/ivanklchan.github.io/scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/3deb9a4de2.js" crossorigin="anonymous"></script>
+</head>
+<!-- NAV BAR -->
+<body>
+<header> 
+<nav class="nav-bar">
+    <div class="brand-name">&lt;/ivanChan&gt;</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>    
+    <div class="navbar-links">
+        <ul>
+            <li><a href="/ivanklchan.github.io/index.html" class="home">Home &#127968;</a></li>
+            <li><a href="/ivanklchan.github.io/about.html">About Me &#128102;</a></li>
+            <li><a href="/ivanklchan.github.io/blog.html">Blogs &#128540</a></li>
+            <li><a href="/ivanklchan.github.io/projects.html">Projects &#128221;</a></li>
+            <li><a href="/ivanklchan.github.io/resume.html">Resume &#128188;</a></li>
+        </ul>
+    </div>
+</nav>
+</header>   
+<!-- Main content -->
+<main class="content-wrap">
+    <div class="blog-content">
+    <div class="page-heading">
+    <h1>How I Learned to Code</h1>
+    <h2>🖋️ Ivan Chan  | 📅 January 3 2021  | 📍 Guelph, ON </h2>
+</div>
+    
+    <img src="/ivanklchan.github.io/images/post-banners/how-i-learned-to-code-banner.jpg">
+
+    <h3>My Coding Philosophy</h3>
+
+    <p>I think the two most essential attributes that a web developer or a programmer should have are <i>committment</i> and <i>integrity</i>. I firmly believe that the manifestation of the two aforementioned attributes will propel anyone interested in computer science to excellence regardless of their skill level.</p>
+
+    <h3>A Bit of History</h3>
+
+    <p>I’ve coded this website entirely by myself. And I don’t wish to brag because I want to embark you on a journey of how I achieved this level that was once thought impossible by myself.</p>
+
+    <p>I had no prior knowledge on coding. But I took a computer language course in grade 10 and I was quickly disgusted by the difficulty of Python. As I progressed through high school, coding gradually became the antithesis of my goal of pursuing a career in health care.</p>
+
+    <p>However, my views on coding - a seemingly distant inconceivable activity to me, began change in summer of 2019. My journey of becoming a web developer started when I visited my engineering friend's personal website. At that time, coding still felt foreign to me because I saw no use of learning a computer language as a student in a health care program.</p>
+
+    <p>But I was soon convicted by the idea of learning something outside of my primary studies of radiography to broaden my skills set. So I challenged myself to learn the basics of web design - HTML, CSS, and JavaScript.</p>
+
+    <h3>My Experience in Learning Computer Languages</h3>
+
+    <p>For starters, Hypertext markup language (HTML) and cascading styles sheets (CSS) are <i>markup computer languages</i>. Together, they instruct the browser a set of parameters to display readable content to humans. These languages are the most fundamental and basic computer languages that powers the internet.</p>
+
+    <p>If you ever wonder what is all that code when you accidentally pressed F12 on a keyboard, those are basically HTML and CSS.</p>
+
+    <p>Personally, HTML’s easy readability and its high tolerance to errors made it a great candidate for me to try out coding. It allowed me to familiarize myself with code editors and to learn about the paradigm of computer languages.</p>
+
+    <p>So I quickly fired up the “HTML Essential Training” course on LinkedIn Learning (free membership provided by my local library. YAY) and began to watch their video tutorials.</p>
+
+    <p>It took me around three to four weeks to get comfortable with HTML. Although a few weeks seemed like a short time to know a computer language, I can guarantee you that HTML is not that hard and that I know computer programmers who mastered it in a few days.</p>
+
+    <p>After I got some HTML knowledge under my belt, I shifted my attention to CCS. CSS is another markup computer language that is always used alongside HTML. This is because while HTML defines the content, CSS defines the layout of the website such as font size, font type, colours, and margins.</p>
+
+    <p>In my opinion, CSS was more difficult to learn than HTML because of its complex syntax and its heavy reliance on HTML. This means that HTML needs to be coded properly for CSS to work. I’ve had a harder time myself mastering the various techniques to optimize CSS code.</p>
+
+    <h3>Putting the Theory into Practice</h3>
+
+    <p>Once I got a fair amount of knowledge in HTML and CSS, I started building my  website. And I got to say that putting the coding theory into actual practice brought up the difficulty to another dimension.</p>
+
+    <p>As I began to build my website, I ran through many trials and errors. Yet, I found myself oddly enjoying the process of problem solving and critical thinking to construct a tangible product I can confidently show others.</p>
+
+    <p>Although it took me around two to three months to get my personal website into a rough shape with my fairly new knowledge of web design, I spent another year to refine and to master various ways to improve my code.</p>
+
+    <p>I think my journey of learning HTML and CSS really allowed me to sharpen my critical thinking and problem solving skills because I submerged myself into a whole different academic field. At least for me as a student in health care, diving into web design and learning a computer language felt like entering into foreign land.</p>
+
+    <p>After publishing my website for the first time, I felt grateful and I did feel accomplished because I finally discovered a new hobby that I never expected myself to pick up and I found a new unique way to showcase myself.</p>
+
+    <h3>Stay Humble and Keep Learning</h3>
+
+    <p>However, the learning process is not finished yet. It is true that I’ve come a long way since a year and a half ago and that my coding skills have improved drastically. But there is still so much more to learn in the field of web design and computer science that I stay humble to keep discovering and keep learning new skills. </p>
+
+    <p>As I wrote at the very beginning, the three most essential computer languages that power the world wide web are HTML, CSS, and JavaScript. I am only comfortable with HTML and CSS at the moment and I just got started with JavaScript.</p>
+
+    <p>Unlike HTML and CSS, which are markup languages, JavaScript is a programming language that allows user interactivity on the website. Currently, I am getting my hands on JavaScript and I am planning to incorporate more JavaScript powered user interactivity on my personal projects in the future.</p>
+
+    <p>Personally I find JavaScript very challenging. Even right now I am having trouble getting to know the basics of the language, which brings me to the topic of giving up and staying committed.</p>
+
+    <h3>Committment or "Cheating"...?</h3>
+
+    <p>There were a few people who suggested I could have used a website builder like Wix, Wordpress, or Google Sites to <i>“make my life easier”</i> because then I would not have to go through the pain of coding.</p>
+
+    <p>While I do appreciate my peer’s opinions, I can’t imagine calling myself a “web developer” without actually learning the code. I also see that building my website from scratch without any builders or templates would allow me to take on challenges that are beyond my comfort zone. </p>
+
+    <p>Going through the pain of trial and error, debugging the code, and countless times of feeling like I am hitting a wall in my project actually trained up my commitment and concentration skills.</p> 
+
+    <p>But I kid you not, there had been multiple times I was on the verge of giving up entirely because I thought to myself “why on earth am I doing this? It seemed like I was just wasting my time because people weren’t going to pay attention to my work anyway.”</p> 
+
+    <p>And then I continued to reaffirm myself that learning to code, learning to build a website, and spending hours on writing blogs and research aren't about getting people to appreciate my work. It’s about expressing myself in ways that I’ve never imagined before and allow my life’s calling to find me.</p>
+
+    <h3>So How Difficult is Coding?</h3>
+
+    <p>I am going to say the answer straight: <i>coding is <b>difficult</b></i>. Anyone who say "coding is easy" is either 1. <i>at the beginning peak curve of the <b>Dunning-Kurger Effect</b></i>, which refers to the bias of how people perceive a concept or event to be simplistic just because their knowledge about it may be simple or lacking, or 2. <i>a coding master who cognitively assumes that everyone else is as competent as him or her</i>.</p> 
+
+    <p>About 80% of the time, coding felt like hitting brick wall because the things I would expect to work properly would somehow mysteriously fail. And then each problem I was trying to solve would create a few more new problems. This would potentially mean that a project that you anticipated to be easy could end up with <i>hundreds</i> or even <i>thousands</i> of issues. 
+
+    <p>A more graphical analogy would be unknowingly sailing into a hurricane when you expected a calm sea.</p> 
+
+    <p>But, once I endured the hardship and all the obstacles in the project, suddenly all the mistakes I encountered became invaluable skills and experience that would catapult me to push beyond my comfort level even further to embrace new and more complex challenges.</p> 
+
+    <h3>We All Learn From Mistakes and We Should Not Give Up</h3>
+
+    <p>Although coding is diffocult, I do not want to discourage you from dipping your toes into the vast field of computer science. In fact, I wanted to give an honest opinion based on my experience of becoming a self-taught web developer as a future radiologic technologist.</p> 
+
+    <p>We encounter hardships and diffucult moments in every profession or industry we get into. As a student radiologic technologist, I stumble upon countless <i>"hitting a brick wall"</i> situations in a clinical setting. However, my mindset of problem solving and my commitment to my work are the same regardless if I am health care professional at a hospital or as a web developer.</p> 
+
+    <p>Many people I know would immediately dismiss the notion of trying coding because they assume it is boring and hard. But I vow to say that we should all give coding a try before making a sound judgement. Certainty it is not for everyone, but sometimes trying other things could potentially lead you to new discoveries and new passion, and I think this is the most rewarding feeling in life.</p> 
+
+    <p>Above all, do not give up easily and stay committed!</p>
+</div>
+<div>
+    <h2>Read More</h2>
+<!-- BLOG REVIEW READ MORE -->
+
+<figure class="blog-items">
+    <a href="/ivanklchan.github.io/how-i-learned-to-code/2021/01/03.html">
+        <h1>How I Learned to Code</h1>
+        <p>📅 January 3 2021  | 📍 Guelph, ON</p>
+    </a>
+</figure>
+
+<figure class="blog-items">
+    <a href="/ivanklchan.github.io/my-four-months-off-school/2021/01/01.html">
+        <h1>My Four Months off School</h1>
+        <p>📅 January 1 2021  | 📍 Guelph, ON</p>
+    </a>
+</figure>
+
+<figure class="blog-items">
+    <a href="/ivanklchan.github.io/managing-finances-in-university/2020/11/10.html">
+        <h1>Managing Finances in University</h1>
+        <p>📅 November 10 2020  | 📍 Toronto, ON</p>
+    </a>
+</figure>
+
+<figure class="blog-items">
+    <a href="/ivanklchan.github.io/second-year-reflection/2020/10/24.html">
+        <h1>Second Year Reflection</h1>
+        <p>📅 October 24 2020  | 📍 Toronto, ON</p>
+    </a>
+</figure>
+
+<!-- BOOK REVIEW READ MORE -->
+
+<figure class="blog-items">
+    <a href="/ivanklchan.github.io/atomic-habits-review/2020/10/17.html">
+        <h1><i>Book Review</i> - Atomic Habits</h1>
+        <p>📅 October 17 2020  | 📍 Toronto, ON</p>
+    </a>
+</figure>
+
+<figure class="blog-items">
+    <a href="/ivanklchan.github.io/the-millionaire-next-door/2020/10/14.html">
+        <h1><i>Book Review - </i>The Millionaire Next Door</h1>
+        <p>📅 October 14 2020  | 📍 Toronto, ON</p>
+    </a>
+</figure>
+
+    <h2>Keep in Contact!</h2>
+<div class="contact-info">
+    <ul> 
+        <li><a href="https://www.messenger.com/" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
+        <li><a href="https://www.facebook.com/dontcallmeevan" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/i.vanchan/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ivan-chan-063b43144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="mailto: chank52@mcmaster.ca" target="_blank"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+</div>
+</div>
+</main>
+<!-- COPYRIGHT AND SOCIAL MEDIA --> 
+<footer>
+    <div class="footer-content-wrap">
+        <div class="footer-info">
+            <div class="footer-content-items">
+                <div class="footer-content-item footer-logo">
+                    <h1>&lt;/ivanChan&gt;</h1>
+                    <p class = "copyright-text"> IVAN CHAN &copy; 2019-2021</p>
+                    <p class ="copyright-text">
+                    Hosted by Github<br>
+                    Powered by Jekyll</p>
+                </div>
+                <div class="footer-content-item connect">
+                    <h1>Connect</h1>
+                    <a href="https://www.facebook.com/dontcallmeevan" title="link to facebook" target="_blank"><img src="/ivanklchan.github.io/images/footer-icons/facebook-icon.png" height="30" width="30"></a>
+                    <a href="https://www.instagram.com/i.vanchan/" target="_blank"><img src="/ivanklchan.github.io/images/footer-icons/instagram-icon.png" height="30" width="30"></a>
+                    <a href="https://www.linkedin.com/in/ivan-chan-063b43144/" target="_blank"><img src="/ivanklchan.github.io/images/footer-icons/linkedin-icon.png" height="30" width="30"></a>
+                    <a href="mailto:chank52@mcmaster.ca" title="link to facebook" target="_blank"><img src="/ivanklchan.github.io/images/footer-icons/email-icon.png" height="30" width="30"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
