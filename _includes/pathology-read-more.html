@@ -1,0 +1,10 @@
+<h2>Read More</h2>
+<!-- PATHOLOGY REVIEW READ MORE -->
+{% for pathology in site.categories.pathology %}
+<figure class="blog-items">
+    <a href="{{ pathology.url | absolute_url }}">
+        <h1>{{ pathology.title }}</h1>
+        <p>📅 {{pathology.date | date:"%B %-d %Y" }}  | 📍 {{pathology.location}}</p>
+    </a>
+</figure>
+{% endfor %}

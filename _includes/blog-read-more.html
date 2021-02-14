@@ -1,0 +1,19 @@
+<h2>Read More</h2>
+<!-- BLOG REVIEW READ MORE -->
+{% for blog in site.categories.blog %}
+<figure class="blog-items">
+    <a href="{{ blog.url | absolute_url }}">
+        <h1>{{ blog.title }}</h1>
+        <p>📅 {{blog.date | date:"%B %-d %Y" }}  | 📍 {{blog.location}}</p>
+    </a>
+</figure>
+{% endfor %}
+<!-- BOOK REVIEW READ MORE -->
+{% for review in site.categories.review %}
+<figure class="blog-items">
+    <a href="{{ review.url | absolute_url }}">
+        <h1>{{ review.title }}</h1>
+        <p>📅 {{review.date | date:"%B %-d %Y" }}  | 📍 {{review.location}}</p>
+    </a>
+</figure>
+{% endfor %}

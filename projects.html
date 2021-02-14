@@ -1,0 +1,56 @@
+--- 
+title: Projects
+layout: default
+---
+
+<div class="blog-intro-wrap">
+    <img class="blog-intro-pic" src="images/projects-background.jpg">
+    {% include health-disclaimer.html %}
+
+<!-- BODY -->
+<!-- Life -->
+
+    <h1>Pathology Reviews 🩺</h1>
+    <div class="blog-items-wrap">
+        {% for pathology in site.categories.pathology %}
+        <figure class="blog-items">
+            <a href="{{ pathology.url | absolute_url }}">
+                <h1>{{ pathology.title }}</h1>
+                <p>🖋️ {{pathology.author}}  | 📅 {{pathology.date | date:"%B %-d %Y" }} | 📍 {{pathology.location}}</p>
+                <p>{{ pathology.excerpt | strip_html | truncatewords: 30}}</p>
+            </a>
+        </figure>
+        {% endfor %}
+    </div>
+
+<!-- Book Reviews -->
+    <h1>Physics Reports 💡</h1>
+    <div class="blog-items-wrap">
+        {% for physics in site.categories.physics %}
+        <figure class="blog-items">
+            <a href="{{ physics.url | absolute_url }}">
+                <h1>{{ physics.title }}</h1>
+                <p>🖋️ {{physics.author}}  | 📅 {{physics.date | date:"%B %-d %Y" }}  | 📍 {{physics.location}}</p>
+                <p>{{ physics.excerpt | strip_html | truncatewords: 30}}</p>
+                <p></p>
+            </a>
+        </figure>
+        {% endfor %}
+    </div>
+    <!-- This is the template code for additional blogs -->
+<!--<figure class="blog-items">
+        <a href="#" class="blog-items-container">
+        <div class="blog-items-content">
+            <h1></h1>
+            <p>🖊️ Ivan Chan | 📅 2021 | 📍 Toronto, ON  | ⏱️ x min</p>
+            <p></p>
+        </div>
+        <div class="blog-items-content">
+            <img class="blog-cover-image" src="#">
+        </div>
+        </a>
+    </figure> -->
+</div>
+<div>
+    {% include hz-social-bar.html %}
+</div>

@@ -1,0 +1,94 @@
+--- 
+title: Home
+layout: default
+--- 
+
+<!-- Left side of main content 2fr -->
+<div class="home-content-item">
+    <!-- Introduction Sentence "Hello" -->
+    <div class="home-intro-content">
+        <h1>👋 Hello!</h1>
+        <p>I'm Ivan, a <b class="underline">student x-ray technologist</b>☢️,</p> 
+        <p>web developer 👨‍💻, and a blogger 🖊️.</p>
+        <img class="ivanHead" src="images/ivanHead.jpg" alt="logo">
+    </div>
+    <p class="photo-credit">📷  <a class="underline" href="https://www.instagram.com/kylesvisuals/" target="_blank">@kylesvisuals</a></p>
+    <!-- Search Bar for Aesthetics and later function  with JS-->
+    <!-- Fix later to position to the centre of Left side of main content 2fr -->
+    <div class="search-bar">
+        <input class="search-text" type="text" name="" placeholder="Type something :)">
+        <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+    <!-- Content Highlight with blogs, books, and prodjects -->
+    <p class="highlight-font">CONTENT HIGHLIGHTS</p>
+    <div class="content-highlight mobile-grid">
+
+        {% for blog in site.categories.blog limit: 4 %}
+        <div class="content-highlight-item">
+            <a href="{{ blog.url | absolute_url }}"><h1>{{ blog.title }}</h1>
+            <p>🖋️ {{blog.author}}  | 📅 {{blog.date | date:"%B %-d %Y" }}  | 📍 {{blog.location}}</p>
+            <img class="cover-image" src="{{ blog.cover | prepend: site.baseurl}}">
+            <p>{{ blog.excerpt | strip_html | truncatewords: 25}}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Right side of main content 1fr -->
+<div class="home-content-item">
+    <!-- Side content like COVID-19, vaccine, mental health resources etc. -->
+    <h2 class="underline">❤️ COVID-19 Resources</h2>
+    <div class="home-side-content mobile-grid">
+        <div class="home-side-content-item"> 
+            <p>😷 Symptoms</p> <!-- COVID-19 Information Section -->
+            <ul> 
+                <li><a class="underline" href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html" target="_blank">Health Canada <i class="fab fa-canadian-maple-leaf"></i></a></li>
+                <li><a class="underline" href="https://www.who.int/health-topics/coronavirus#tab=tab_3" target="_blank">World Health Organization 🌎</a></li>
+            </ul>
+            <p>💉 Vaccine</p> <!-- COVID-19 Information Section -->
+            <ul>
+                <li><a class="underline" href="https://www.canada.ca/en/health-canada/services/drugs-health-products/covid19-industry/drugs-vaccines-treatments/vaccines.html" target="_blank">Government of Canada <i class="fab fa-canadian-maple-leaf"></i></a></li>
+                <li><a class="underline" href="https://healthycanadians.gc.ca/recall-alert-rappel-avis/hc-sc/2020/74543a-eng.php" target="_blank">Are vaccines safe? 🤔</a></li>
+            </ul>
+            <p>⚠️ Precautions</p> <!-- COVID-19 Information Section -->
+            <ul>
+                <li><a class="underline" href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html" target="_blank">COVID-19 Prevention & Risks <i class="fab fa-canadian-maple-leaf"></i></a></li>
+                <li><a class="underline" href="#" target="_blank">Centers for Disease Control 🏢</a></li>
+            </ul>
+            <p>🧘 Mental Health</p> <!-- COVID-19 Information Section -->
+            <ul>
+                <li><a class="underline" href="https://cmha.ca/news/covid-19-and-mental-health" target="_blank">Canadian Mental Health Association <i class="fab fa-canadian-maple-leaf"></i></a></li>
+                <li><a class="underline" href="https://www.who.int/teams/mental-health-and-substance-use/covid-19" target="_blank">World Health Organization 🌎</a></li>
+            </ul>
+        </div>
+        <div class="content-highlight-item"> <!-- COVID-19 Information Section -->
+            <h1>COVID-19 in Radiology</h1>
+            <p>Ivan Chan | Feb 14 2020 | Coming soon...</p>
+            <img class="cover-image" src="{{site.baseurl}}/images/covers/covid-19-cover-image.jpeg">
+            <p>Case courtesy of Dr Fabio Macori, <a href="http://radiopaedia.org/" target="_blank">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/covid-19-28?lang=us" target="_blank">COVID-19.</a></p>
+        </div>
+    </div>
+    <!-- Mini about me section -->
+    <div class="mini-about-me mobile-grid">
+        <!-- About me -->
+        <div class="mini-about-me-item">
+            <h2>💁‍♂️ About Me </h2>
+            <p>As of February 2021, I am a <b>student radiologic technologist</b> at <b>McMaster University</b> in Canada. I am currently attending clinical practicum at <b>Guelph General Hospital</b>.</p>
+        </div>
+        <!-- Books I've read -->
+        <div class="mini-about-me-item">
+            <h2>📘 Books I've Read</h2>
+            <p>Atomic Habits, Rich Dad Poor Dad, The Milionaire Next Door, Set for Life, The 12 Rules of Life.</p>
+        </div>
+        <!-- Music I love -->
+        <div class="mini-about-me-item">
+            <h2>🎵 Music I Love</h2>
+            <p>Shawn Mendes, The Reklaws, Hillsong, Shane & Shane, Ed Sheeran, Post Malone (for the chill vibez).</p>
+        </div>
+    </div>
+    <!-- Contact information with fontawesome icons. Look at Ali's website as a template - huge icons and huge margins / paddings.  -->
+    {% include hz-social-bar.html %}
+</div>

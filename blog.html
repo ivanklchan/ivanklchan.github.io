@@ -1,0 +1,49 @@
+--- 
+title: Blog
+layout: default
+---
+
+<div class="blog-intro-wrap">
+    <img class="blog-intro-pic" src="images/about-intro-banner.png">
+    {% include disclaimer.html %}
+
+<!-- BODY -->
+<!-- Life -->
+
+    <h1>Life 💡</h1>
+    <p>Life is full of surprises. Here are some thoughts of how I dealt with certain unexpected challenges in life. 
+    </p>
+
+    <div class="blog-items-wrap">
+        {% for blog in site.categories.blog %}
+        <figure class="blog-items">
+            <a href="{{ blog.url | absolute_url }}">
+                <h1>{{ blog.title }}</h1>
+                <p>🖋️ {{blog.author}}  | 📅 {{blog.date | date:"%B %-d %Y" }}  | 📍 {{blog.location}}</p>
+                <p>{{ blog.excerpt | strip_html | truncatewords: 30}}</p>
+            </a>
+        </figure>
+        {% endfor %}
+    </div>
+
+<!-- Book Reviews -->
+    <h1>Book Reviews 📚</h1>
+    <p>
+        Book reviews from mostly self-help and finance books. 
+    </p>
+        
+    <div class="blog-items-wrap">
+        {% for review in site.categories.review %}
+        <figure class="blog-items">
+            <a href="{{ review.url | absolute_url }}">
+                <h1>{{ review.title }}</h1>
+                <p>🖋️ {{review.author}}  | 📅 {{review.date | date:"%B %-d %Y" }}  | 📍 {{review.location}}</p>
+                <p>{{ review.excerpt | strip_html | truncatewords: 30}}</p>
+            </a>
+        </figure>
+        {% endfor %}
+    </div>
+</div>
+<div>
+    {% include hz-social-bar.html %}
+</div>
