@@ -38,14 +38,7 @@ layout: default
 
 </div>
 
-<div class="about-content-item mobile-grid">
+<div>
+    {% include blog-read-more.html %}
     {% include hz-social-bar.html %}
-    {% for review in site.categories.review %}
-    <figure class="blog-items">
-        <a href="{{ review.url | absolute_url }}">
-            <h1>{{ review.title }}</h1>
-            <p>🖋️ {{review.author}}  | 📅 {{review.date | date:"%B %-d %Y" }}  | 📍 {{review.location}}</p>
-        </a>
-    </figure>
-    {% endfor %}
 </div>
