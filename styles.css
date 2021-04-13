@@ -507,7 +507,7 @@ figure.blog-items:hover {
     max-height: auto;
 }
 
-.physLab1F2, .physLab1F3, .physLab1F4, .physLab1F5, .endoStroke, .endoCT, .doubleDensity, .echoEndo, .starPatt, .bowelPerf, .absAbsTx, .absUS, .abdAbsCor, .absPatt, .phiLargeFFS, .phiSmallFFS, .sieLargeFFS, .sieSmallFFS{
+.pathology-images {
     max-height: 100%;
     max-width: 100%;
 }
