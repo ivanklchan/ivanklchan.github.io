@@ -70,6 +70,15 @@ layout: default
             <img class="cover-image" src="{{site.baseurl}}/images/covers/covid-19-cover-image.jpeg">
             <p>Case courtesy of Dr Fabio Macori, <a href="http://radiopaedia.org/" target="_blank">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/covid-19-28?lang=us" target="_blank">COVID-19.</a></p>
         </div>
+        <h2 class="underline">🩺 Pathology Reviews</h2>
+        {% for pathology in site.categories.pathology limit: 2 %}
+        <figure class="blog-items">
+            <a href="{{ pathology.url | absolute_url }}">
+                <h1>{{ pathology.title }}</h1>
+                <p>📅 {{pathology.date | date:"%B %-d %Y" }}  | 📍 {{pathology.location}}</p>
+            </a>
+        </figure>
+        {% endfor %}
     </div>
     <!-- Mini about me section -->
     <div class="mini-about-me mobile-grid">

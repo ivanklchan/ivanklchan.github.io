@@ -30,10 +30,6 @@ lightcoral
 
 /* VARIABLES for LIGHT MODE (TOGGLE) */
 
-:root {
-
-}
-
 /* GLOBAL */
 
 html{ 
@@ -305,7 +301,7 @@ a {
     border: none; 
     background: none;
     outline: none; 
-    color: hsl(0, 0%, 100%), 0%, 100%);
+    color: hsl(0, 0%, 100%), 0%, 100%;
     transition: 0.1s;
     line-height: 2rem; 
 }
@@ -479,7 +475,7 @@ figure.blog-items:hover {
 .project-content h2 {
     font-size: 1.2em;
     margin-bottom: 1rem;
-    color: var(--main-heading-colour)
+    color: var(--main-heading-colour);
     letter-spacing: 0;
 }
 
@@ -596,7 +592,7 @@ th, td {
 
 .resume-title-item > h1 {
     font-size: 2.5rem;
-    color: var(--main-heading-colour)
+    color: var(--main-heading-colour);
     margin: 0;
 }
 
@@ -617,7 +613,7 @@ th, td {
     border-radius: 50%;
 }
 
------------------------------
+/* ----------------------------- */
 
 /* Read More Section */
 
@@ -859,7 +855,7 @@ footer {
 @media screen and (max-width: 650px) {
     
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .brand-name {
@@ -1006,38 +1002,33 @@ footer {
         margin: 0 auto;
     }
 
-    .project-content > ol {
-        padding-left: 0;
+    .project-content ol, .project-content ul {
+        padding-left: 1em;
     }
 
-    .project-content li {
-        font-size: 0.8em;
-    }
-
-
-    .project-content p {
+    .project-content li, .project-content p {
         font-size: 1em;
     }
-    
+
     .project-content h1{
-        font-size: 1.5em;
+        font-size: 2.3em;
     }
     
     .project-content h2 {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .project-content h3 {
-        font-size: 1em
+        font-size: 1.3em
     }
 
     .project-content h3:first-of-type, .project-content h3:last-of-type{
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     th, td {
-        font-size: 0.8rem;
-        padding: 0.1rem;
+        font-size: 0.8em;
+        padding: 0.1em;
         text-align-last: left;
     }
 
@@ -1118,10 +1109,6 @@ footer {
 @media screen and (max-width: 380px) {
 
     /* to make sure that for even smaller devices like iPhone 5S that the featured posts section would be converted to block for easily readibility. */
-
-    html {
-        font-size: 10px;
-    }
 
     .mobile-grid {
         display: block; 
