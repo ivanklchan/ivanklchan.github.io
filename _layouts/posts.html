@@ -14,53 +14,14 @@
     <script src="{{site.baseurl}}/scripts.js" defer></script>
     <script src="https://kit.fontawesome.com/3deb9a4de2.js" crossorigin="anonymous"></script>
 </head>
-<!-- NAV BAR -->
 <body>
-<header> 
-<nav class="nav-bar">
-    <div class="brand-name">&lt;/ivanChan&gt;</div>
-    <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>    
-    <div class="navbar-links">
-        <ul>
-            <li><a href="{{site.baseurl}}/index.html" class="home">Home &#127968;</a></li>
-            <li><a href="{{site.baseurl}}/about.html">About Me &#128102;</a></li>
-            <li><a href="{{site.baseurl}}/blog.html">Blogs &#128540</a></li>
-            <li><a href="{{site.baseurl}}/projects.html">Projects &#128221;</a></li>
-            <li><a href="{{site.baseurl}}/resume.html">Resume &#128188;</a></li>
-        </ul>
-    </div>
-</nav>
-</header>   
+<!-- Header & Navigation Bar -->
+    {% include header.html %} 
 <!-- Main content -->
 <main class="content-wrap">
     {{ content }}
 </main>
-<!-- COPYRIGHT AND SOCIAL MEDIA --> 
-<footer>
-    <div class="footer-content-wrap">
-        <div class="footer-info">
-            <div class="footer-content-items">
-                <div class="footer-content-item footer-logo">
-                    <h1>&lt;/ivanChan&gt;</h1>
-                    <p class = "copyright-text"> IVAN CHAN &copy; 2019-2021</p>
-                    <p class ="copyright-text">
-                    Hosted by Github<br>
-                    Powered by Jekyll</p>
-                </div>
-                <div class="footer-content-item connect">
-                    <h1>Connect</h1>
-                    <a href="https://www.facebook.com/dontcallmeevan" title="link to facebook" target="_blank"><img src="{{site.baseurl}}/images/footer-icons/facebook-icon.png" height="30" width="30"></a>
-                    <a href="https://www.instagram.com/i.vanchan/" target="_blank"><img src="{{site.baseurl}}/images/footer-icons/instagram-icon.png" height="30" width="30"></a>
-                    <a href="https://www.linkedin.com/in/ivan-chan-063b43144/" target="_blank"><img src="{{site.baseurl}}/images/footer-icons/linkedin-icon.png" height="30" width="30"></a>
-                    <a href="mailto:chank52@mcmaster.ca" title="link to facebook" target="_blank"><img src="{{site.baseurl}}/images/footer-icons/email-icon.png" height="30" width="30"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<!-- Copyright & Social Media --> 
+    {% include footer.html %}   
 </body>
 </html>

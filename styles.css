@@ -17,25 +17,36 @@ lightcoral
 /* VARIABLES for DARK MODE (DEFAULT) */
 
 :root { 
-    --main-bg-colour: #202020; 
-    --main-text-colour: #F7F3E3;
+    --background-colour: #202020;
+    --card-container-colour: #303030;
+    --hover-colour: #484848;
     --main-heading-colour: #f08080;
+    --main-text-colour: #F7F3E3;
     --paragraph-header-colour: #b3b3b3;
-    --highlight-container-colour: #063268;
-    --search-bar: #3b3b3b;
-    --nav-hover-colour: #484848;
-    --side-item-background-colour: #303030;
 }
 
 /* VARIABLES for LIGHT MODE (TOGGLE) */
+
+/* :root { 
+    --background-colour: #FFFFFF;  
+    --card-container-colour: #f0f0f0;
+    --hover-colour: #e2e2e2;
+    --main-heading-colour: #2083df;
+    --paragraph-header-colour: #585858;
+    --main-text-colour: #212529 ;
+} */
 
 /* GLOBAL */
 
 html{ 
     font-size: 16px;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-colour);
     color: var(--main-text-colour);
-    background-color: var(--main-bg-colour);
 }
 
 p {
@@ -80,7 +91,7 @@ a {
 .btn-links {
     margin: 5px 0;
     padding: 8px 8px;
-    background-color: var(--main-bg-colour);
+    background-color: var(--background-colour);
     border: none;
     border-radius: 4px;
     text-decoration: none;
@@ -92,21 +103,30 @@ a {
     font-weight: 100;
 }
 
-/* NAVIGATION */
+/* Light-mode */
 
-.nav-bar {
+.theme-setting {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.brand-name {
+brandName {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     margin: 2rem;
     letter-spacing: 0.2rem;
 }
 
-.nav-bar ul {
+/* NAVIGATION */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.navbar-links {
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -120,7 +140,7 @@ a {
 }
 
 .nav-bar a:hover {
-    background-color: var(--nav-hover-colour);
+    background-color: var(--hover-colour);
     border-radius: 1rem;
     transition: all 0.3s ease 0s;
 }
@@ -194,9 +214,14 @@ a {
 }
 
 .content-highlight-item {
-    background-color: var(--highlight-container-colour);
+    background-color: var(--card-container-colour);
     padding: 1rem;
     border-radius: 1rem;
+}
+
+.content-highlight-item:hover {
+    background-color: var(--hover-colour);
+    transition: all 0.3s ease;
 }
 
 .content-highlight-item h1 {
@@ -238,7 +263,7 @@ a {
 }
 
 .contact-info, .home-side-content-item {
-    background-color: var(--side-item-background-colour);
+    background-color: var(--card-container-colour);
     border-radius: 1rem;
 }
 
@@ -271,7 +296,7 @@ a {
     width: 20rem;
     border-radius: 2.1rem;
     padding: 10px;
-    background: var(--search-bar);
+    background: var(--card-container-colour);
 }
 
 .search-btn {
@@ -346,19 +371,19 @@ a {
 .blog-items {
     padding: 0.7rem;
     margin: 0.7rem;
-    background-color: #303030;
+    background-color: var(--card-container-colour);
     border-radius: 1rem;
     transition: all 0.2s ease;
 }
 
 figure.blog-items:hover {
-    background-color: #404040;
+    background-color: var(--hover-colour);
 }
 
 .blog-items h1 {
     font-size: 1.3rem;
     margin-top: 0;
-    color: var(--main-heading-colour)
+    color: var(--main-heading-colour);
 }
 
 /* Blog content pages */
@@ -538,7 +563,7 @@ th, td {
 }
 
 .about-side-item {
-    background-color: var(--side-item-background-colour);
+    background-color: var(--card-container-colour);
     margin: 0 0 1rem 0;
     padding: 1.25rem;
     border-radius: 1.25rem;
@@ -576,7 +601,7 @@ th, td {
     margin: 0.5rem 0;
     font-size: 1.1rem;
     letter-spacing: 0rem;
-    color: #b3b3b3
+    color: var(--paragraph-header-colour);
 }
 
 .resume-main-content h3 {
@@ -612,8 +637,6 @@ th, td {
     border-radius: 50%;
 }
 
-/* ----------------------------- */
-
 /* Read More Section */
 
 .read-more-wrap {
@@ -623,7 +646,7 @@ th, td {
 }
 
 .read-more-items {
-    background-color: var(--side-item-background-colour);
+    background-color: var(--card-container-colour);
     border-radius: 20px;
     padding: 1rem;
 }
@@ -631,7 +654,7 @@ th, td {
 .read-more-items > h1 {
     font-size: 1.5rem;
     margin: 10px 0;
-    color: var(--main-heading-colour)
+    color: var(--main-heading-colour);
 }
 
 .read-more-items > p{
@@ -642,48 +665,41 @@ th, td {
 /*FOOTER*/
 
 footer {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.footer-content-wrap {
-    max-width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.footer-content-items {
+    background-color: var(--card-container-colour);
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    margin-top: 6rem;
+    padding: 4rem 6rem;
 }
 
-.copyright-text {
-    font-size: 0.75rem;
-    letter-spacing: 1px;
-    color: #F7F3E3;
+#logo-copyright {
+    display: flex; 
+    flex-direction: column;
 }
 
-.footer-info a{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-bottom: 0.625rem;
-    display: inline-block;
+footer h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: left;
+    letter-spacing: 0.2rem;
 }
 
-.footer-info h1 {
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 20px;
+#logo-copyright small {
+    padding: 0.1rem 0;
 }
 
-.footer-logo {
-    letter-spacing: 2px;
+#connect {
+    display: flex;
 }
 
-.footer-emoji {
-    font-size: 1.875rem;
+.connect-icons, .fa-github {
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    padding-left: 1rem;
 }
 
 /* Media Queries */
@@ -732,7 +748,6 @@ footer {
         .read-more-items {
             margin: 1em 0;
         }
-
 }
 
 /* Navigation collapse to toggle burger when the screen size < 915px, this is the point when the emojis wrap around the text.*/
@@ -754,16 +769,13 @@ footer {
     }
 
     .nav-bar {
+        margin: 0;
         flex-direction: column;
         align-items: flex-start;
     }
-    
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
 
-    .navbar-links li {
+    .navbar-links {
+        flex-direction: column;
         text-align: right;
     }
 
@@ -779,7 +791,7 @@ footer {
     /* About page for mobile and iPad < 930 px */
 
     .content-wrap {
-        max-width: 95%;
+        max-width: 90%;
     }
 
     /* Project for < 930 px */
@@ -838,8 +850,8 @@ footer {
 
     /* Footer */
 
-    .footer-content-item > h1 {
-        padding: 5px 20px;
+    footer {
+        padding: 3rem 1rem;
     }
 
     /* Read More */
@@ -857,7 +869,7 @@ footer {
         font-size: 14px;
     }
 
-    .brand-name {
+    brandName {
         font-size: 1.2rem;
         letter-spacing: 0.15rem;
         margin:1.5rem 1rem;
@@ -870,7 +882,7 @@ footer {
     .toggle-button .bar {
         height: 2px;
         width: 100%;
-        background-color: #F7F3E3;
+        background-color: var(--main-text-colour);
         border-radius: 10px;
     }
     
@@ -888,7 +900,7 @@ footer {
     }
 
     .content-highlight-item {
-        padding: 12px;
+        padding: 1rem;
         margin: 10px 0;
     }
     
@@ -937,29 +949,30 @@ footer {
 
     /* Footer mobile section */
 
-    .copyright-text {
-        font-size: 8px;
-        letter-spacing: 1px;
+    footer {
+        margin: 3rem 0 0 0; 
+        padding: 1rem 0;
     }
 
-    .footer-content-item h1{
-        font-size: 0.8rem;
-        padding: 5px 20px;
+    footer, #logo-copyright h1{
+        display: block;
+        text-align: center;
     }
 
-    .footer-info a{
-        display: inline-block;
-        padding: 2px;
-        margin: 0;
+    #logo-copyright h1 {
+        font-size: 1.4rem;
     }
 
-    .connect img {
-        max-width: 80%;
-        height: auto;
+    .footer-connect {
+        display: none;
     }
 
-    .footer-content-wrap {
-        max-width: 100%;
+    #connect {
+        justify-content: center;
+    }
+
+    .connect-icons, .fa-github {
+        padding: 1rem 0.5rem;
     }
 
     /* Project section MOBILE */
@@ -1105,7 +1118,7 @@ footer {
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
 
     /* to make sure that for even smaller devices like iPhone 5S that the featured posts section would be converted to block for easily readibility. */
 
