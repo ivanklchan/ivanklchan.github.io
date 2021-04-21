@@ -6,14 +6,6 @@ font-family: 'PT Serif', serif;
 font-family: 'Kaushan Script', cursive;
 font-family: 'Merriweather', serif;
 
-COLOURS
-
-#F7F3E3 - sandy white
-#303030 - grey
-#000000 - black
-#202020 - dark grey
-lightcoral
-
 /* VARIABLES for DARK MODE (DEFAULT) */
 
 :root { 
@@ -27,14 +19,69 @@ lightcoral
 
 /* VARIABLES for LIGHT MODE (TOGGLE) */
 
-/* :root { 
+.light-mode { 
     --background-colour: #FFFFFF;  
     --card-container-colour: #f0f0f0;
     --hover-colour: #e2e2e2;
     --main-heading-colour: #2083df;
     --paragraph-header-colour: #585858;
     --main-text-colour: #212529 ;
-} */
+}
+
+/* Theme Change Toggle */
+
+.theme-setting {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-color-switch {
+    display: flex; 
+}
+
+.color-switch {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 3.2rem;
+    height: 1.5rem; 
+    border-radius: 2rem;
+    background-color: var(--card-container-colour);
+    border: 2px solid var(--main-heading-colour);
+    cursor: pointer;
+    position: absolute;
+}
+
+.color-switch-toggle {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: var(--main-heading-colour);
+    position: absolute;
+    top: 0.12rem;
+    left: 0.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.color-switch:before {
+    display: inline-block;
+    content: "Dark Mode On";
+    position: absolute; 
+    width: 10rem;
+    left: 3.8rem; 
+}
+
+#theme-change:checked ~ label .color-switch-toggle {
+    transform: translateX(1.75rem);
+}
+
+#theme-change:checked ~ .color-switch::before {
+    content: "Light Mode On";
+}
+
+#input-color-switch {
+    display: none;
+}
 
 /* GLOBAL */
 
@@ -103,17 +150,10 @@ a {
     font-weight: 100;
 }
 
-/* Light-mode */
-
-.theme-setting {
-    display: flex;
-    align-items: center;
-}
-
 brandName {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    margin: 2rem;
+    margin: 2rem 0.5rem 2rem 2rem;
     letter-spacing: 0.2rem;
 }
 
@@ -752,7 +792,7 @@ footer h1 {
 
 /* Navigation collapse to toggle burger when the screen size < 915px, this is the point when the emojis wrap around the text.*/
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1030px) {
 
     html {
         font-size: 12px;
