@@ -97,13 +97,11 @@ body {
 }
 
 p {
-    font-weight: 100;
     line-height: 1.5;
 }
 
 li {
     font-size: 1rem;
-    font-weight: 100;
     line-height: 1.6;
 }
 
@@ -147,7 +145,6 @@ a {
 /* _layouts */
 
 .page-heading h2 {
-    font-weight: 100;
 }
 
 brandName {
@@ -214,7 +211,7 @@ brandName {
     margin: 0 auto;
     display: grid; 
     grid-template-columns: 2fr 1fr;
-    grid-gap: 1.2rem;
+    grid-gap: 2rem;
 }
 
 /* HOME */
@@ -410,7 +407,7 @@ brandName {
 
 .blog-items {
     padding: 0.7rem;
-    margin: 0.7rem;
+    margin: 0.5rem 0;
     background-color: var(--card-container-colour);
     border-radius: 1rem;
     transition: all 0.2s ease;
@@ -458,9 +455,8 @@ figure.blog-items:hover {
 }
 
 .blog-content p, .blog-content li {
-    font-size: 1.2rem;
-    line-height: 2.3;
-    font-weight: 100;
+    font-size: 1.1rem;
+    line-height: 2;
 }
 
 .blog-content > img {
@@ -591,7 +587,6 @@ th, td {
 
 .about-content-item > h2:first-of-type {
     color: var(--paragraph-header-colour);
-    font-weight: 100;
 }
 
 .about-content-item {
@@ -648,7 +643,6 @@ th, td {
     margin: 0.5rem 0;
     font-size: 1rem;
     font-style: italic;
-    font-weight: 100;
     letter-spacing: 0;
 }
 
@@ -678,6 +672,24 @@ th, td {
 }
 
 /* Read More Section */
+
+#anime-head {
+    position: relative;
+    width: 8rem; 
+    height: auto;
+    left: -0.7rem;
+}
+
+#side-summary-social > li {
+    list-style-type: none;
+    margin: 0.3rem 0;
+}
+
+#side-summary-social > .side-summary-icon{
+    font-size: 1.5rem;
+    margin-left: 0;
+    padding-bottom: 0.5rem;
+}
 
 .read-more-wrap {
     display: grid;

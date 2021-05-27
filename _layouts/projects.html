@@ -19,12 +19,14 @@
     {% include header.html %} 
 <!-- Main content -->
 <main class="content-wrap">
-    <div class="blog-content">
+    <div class="project-content">
         {% include page-heading.html %}
+        {% include disclaimer.html %}
         {{ content }}
     </div>
     <div>
-        {% include blog-read-more.html %}
+        {% include projects-read-more.html %}
+        {% include hz-social-bar.html %}
     </div>
 </main>
 <!-- Copyright & Social Media --> 
