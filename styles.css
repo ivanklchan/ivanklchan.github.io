@@ -646,6 +646,10 @@ th, td {
     letter-spacing: 0;
 }
 
+.resume-main-content li {
+    font-size: 0.9rem;
+}
+
     /* name and summary section */
 
 .resume-title-item > h1 {
@@ -713,7 +717,7 @@ th, td {
     font-size: 1rem;
     line-height: 1.5;
 }
-
+ 
 /*FOOTER*/
 
 footer {
